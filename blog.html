@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global head elements -->
+    <noscript><p>Please enable JavaScript to fully experience this site!</p></noscript>
+    <script src="/js/include_head.js" defer></script>
+    <script src="/js/minisearch.js" defer></script>
+    <script src="/js/search.js" defer></script>
+
+    <!-- Local head elements -->
+    <title>Blog | Essence Guide's Blog</title>
+    <meta name="description" content="Search and view all blogs on Essence Guide's Blog">
+    <meta name="author" content="chronix1710">
+
+    <!-- OpenGraph's elements -->
+    <meta property="og:title"       content="Blog | Essence Guide's Blog">
+    <meta property="og:description" content="The only all-in-one Anytype tutorial you will ever need to read">
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="https://chronix1710.github.io/blog/anytype-essence-guide.html">
+    <meta property="og:image"       content="/asset/banner_anytype-essence-guide.png">
+    <meta property="og:site_name"   content="Essence's Guy Blog">
+</head>
+<body>
+    <main id="main" style="display: none;"
+        data-sidebar-left="true"
+        data-sidebar-right="false"
+        data-menubar="true"
+        data-comment-section="false"
+        data-discussion-number="0"
+    >
+        <div id="main-container">
+            <div id="search-panel">
+                <h1 onclick="searchToggle()">Search panel</h1>
+                <div id="search-panel_container">
+                    <div class="search-panel_item" id="search-panel_tag" data-position="1">
+                        <div class="search-panel_item_icon" onclick="searchItemMove(`up`, this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 10.108l-4.6 4.6L6.692 14L12 8.692L17.308 14l-.708.708z"/></svg>
+                        </div>
+                        <div class="search-panel_item_icon" onclick="searchItemMove(`down`, this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 14.379q-.161 0-.298-.053t-.267-.184L7.046 9.754q-.14-.14-.15-.344t.15-.364t.354-.16t.354.16L12 13.292l4.246-4.246q.14-.14.345-.15q.203-.01.363.15t.16.354t-.16.354l-4.389 4.388q-.13.131-.267.184q-.136.053-.298.053"/></svg>
+                        </div>
+                        <select class="search-panel_item_sort">
+                            <option value="none">none</option>
+                            <option value="a-z">a-z</option>
+                            <option value="z-a">z-a</option>
+                            <option value="m-l">most-least</option>
+                            <option value="l-m">least-most</option>
+                        </select>
+                        <div class="search-panel_item_title" title="Select tags that blogs should match at least one" onclick="selectToggle('tag')">Tag:</div>
+                        <div class="search-panel_item_container" data-check-state="unchecked">
+                        </div>
+                    </div>
+                    <div class="search-panel_item" id="search-panel_title" data-position="2">
+                        <div class="search-panel_item_icon" onclick="searchItemMove(`up`, this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 10.108l-4.6 4.6L6.692 14L12 8.692L17.308 14l-.708.708z"/></svg>
+                        </div>
+                        <div class="search-panel_item_icon" onclick="searchItemMove(`down`, this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 14.379q-.161 0-.298-.053t-.267-.184L7.046 9.754q-.14-.14-.15-.344t.15-.364t.354-.16t.354.16L12 13.292l4.246-4.246q.14-.14.345-.15q.203-.01.363.15t.16.354t-.16.354l-4.389 4.388q-.13.131-.267.184q-.136.053-.298.053"/></svg>
+                        </div>
+                        <select class="search-panel_item_sort">
+                            <option value="none">none</option>
+                            <option value="a-z">a-z</option>
+                            <option value="z-a">z-a</option>
+                        </select>
+                        <div class="search-panel_item_title" title="Enter keywords that blogs title should contain">Title:</div>
+                        <input type="text" placeholder="Enter keywords">
+                    </div>
+                    <div class="search-panel_item" id="search-panel_subtitle" data-position="3">
+                        <div class="search-panel_item_icon" onclick="searchItemMove(`up`, this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 10.108l-4.6 4.6L6.692 14L12 8.692L17.308 14l-.708.708z"/></svg>
+                        </div>
+                        <div class="search-panel_item_icon" onclick="searchItemMove(`down`, this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 14.379q-.161 0-.298-.053t-.267-.184L7.046 9.754q-.14-.14-.15-.344t.15-.364t.354-.16t.354.16L12 13.292l4.246-4.246q.14-.14.345-.15q.203-.01.363.15t.16.354t-.16.354l-4.389 4.388q-.13.131-.267.184q-.136.053-.298.053"/></svg>
+                        </div>
+                        <select class="search-panel_item_sort">
+                            <option value="none">none</option>
+                            <option value="a-z">a-z</option>
+                            <option value="z-a">z-a</option>
+                        </select>
+                        <div class="search-panel_item_title" title="Enter keywords that blogs subtitle should contain">Subtitle:</div>
+                        <input type="text" placeholder="Enter keywords">
+                    </div>
+                    <div class="search-panel_item" id="search-panel_author" data-position="4">
+                        <div class="search-panel_item_icon" onclick="searchItemMove(`up`, this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 10.108l-4.6 4.6L6.692 14L12 8.692L17.308 14l-.708.708z"/></svg>
+                        </div>
+                        <div class="search-panel_item_icon" onclick="searchItemMove(`down`, this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 14.379q-.161 0-.298-.053t-.267-.184L7.046 9.754q-.14-.14-.15-.344t.15-.364t.354-.16t.354.16L12 13.292l4.246-4.246q.14-.14.345-.15q.203-.01.363.15t.16.354t-.16.354l-4.389 4.388q-.13.131-.267.184q-.136.053-.298.053"/></svg>
+                        </div>
+                        <select class="search-panel_item_sort">
+                            <option value="none">none</option>
+                            <option value="a-z">a-z</option>
+                            <option value="z-a">z-a</option>
+                        </select>
+                        <div class="search-panel_item_title" onclick="selectToggle('author')" title="Select authors that blogs should match at least one">Author:</div>
+                        <div class="search-panel_item_container" data-check-state="unchecked">
+                        </div>
+                    </div>
+                    <div class="search-panel_item" id="search-panel_date-posted" data-position="5">
+                        <div class="search-panel_item_icon" onclick="searchItemMove(`up`, this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 10.108l-4.6 4.6L6.692 14L12 8.692L17.308 14l-.708.708z"/></svg>
+                        </div>
+                        <div class="search-panel_item_icon" onclick="searchItemMove(`down`, this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 14.379q-.161 0-.298-.053t-.267-.184L7.046 9.754q-.14-.14-.15-.344t.15-.364t.354-.16t.354.16L12 13.292l4.246-4.246q.14-.14.345-.15q.203-.01.363.15t.16.354t-.16.354l-4.389 4.388q-.13.131-.267.184q-.136.053-.298.053"/></svg>
+                        </div>
+                        <select class="search-panel_item_sort">
+                            <option value="none">none</option>
+                            <option value="n-o">new-old</option>
+                            <option value="o-n">old-new</option>
+                        </select>
+                        <div class="search-panel_item_title">Posted date:</div>
+                        <div class="search-panel_item_container">
+                            <span>From</span>
+                            <input type="date" id="search-panel_date-posted_start">
+                            <span>To</span>
+                            <input type="date" id="search-panel_date-posted_end">
+                        </div>
+                    </div>
+                    <div class="search-panel_item" id="search-panel_date-updated" data-position="6">
+                        <div class="search-panel_item_icon" onclick="searchItemMove(`up`, this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 10.108l-4.6 4.6L6.692 14L12 8.692L17.308 14l-.708.708z"/></svg>
+                        </div>
+                        <div class="search-panel_item_icon" onclick="searchItemMove(`down`, this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 14.379q-.161 0-.298-.053t-.267-.184L7.046 9.754q-.14-.14-.15-.344t.15-.364t.354-.16t.354.16L12 13.292l4.246-4.246q.14-.14.345-.15q.203-.01.363.15t.16.354t-.16.354l-4.389 4.388q-.13.131-.267.184q-.136.053-.298.053"/></svg>
+                        </div>
+                        <select class="search-panel_item_sort">
+                            <option value="none">none</option>
+                            <option value="n-o">new-old</option>
+                            <option value="o-n">old-new</option>
+                        </select>
+                        <div class="search-panel_item_title">Updated date:</div>
+                        <div class="search-panel_item_container">
+                            <span>From</span>
+                            <input type="date" id="search-panel_date-updated_start">
+                            <span>To</span>
+                            <input type="date" id="search-panel_date-updated_end">
+                        </div>
+                    </div>
+                    <div class="search-panel_item" id="search-panel_language" data-position="7">
+                        <div class="search-panel_item_icon" onclick="searchItemMove(`up`, this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 10.108l-4.6 4.6L6.692 14L12 8.692L17.308 14l-.708.708z"/></svg>
+                        </div>
+                        <div class="search-panel_item_icon" onclick="searchItemMove(`down`, this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 14.379q-.161 0-.298-.053t-.267-.184L7.046 9.754q-.14-.14-.15-.344t.15-.364t.354-.16t.354.16L12 13.292l4.246-4.246q.14-.14.345-.15q.203-.01.363.15t.16.354t-.16.354l-4.389 4.388q-.13.131-.267.184q-.136.053-.298.053"/></svg>
+                        </div>
+                        <select class="search-panel_item_sort">
+                            <option value="none">none</option>
+                            <option value="a-z">a-z</option>
+                            <option value="z-a">z-a</option>
+                            <option value="m-l">most-least</option>
+                            <option value="l-m">least-most</option>
+                        </select>
+                        <div class="search-panel_item_title" onclick="selectToggle('language')" title="Select languages that blogs should match at least one">Language:</div>
+                        <div class="search-panel_item_container" data-check-state="unchecked">
+                        </div>
+                    </div>
+                    <div class="search-panel_item" id="search-panel_content" data-position="8">
+                        <div class="search-panel_item_icon" onclick="searchItemMove(`up`, this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 10.108l-4.6 4.6L6.692 14L12 8.692L17.308 14l-.708.708z"/></svg>
+                        </div>
+                        <div class="search-panel_item_icon" onclick="searchItemMove(`down`, this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 14.379q-.161 0-.298-.053t-.267-.184L7.046 9.754q-.14-.14-.15-.344t.15-.364t.354-.16t.354.16L12 13.292l4.246-4.246q.14-.14.345-.15q.203-.01.363.15t.16.354t-.16.354l-4.389 4.388q-.13.131-.267.184q-.136.053-.298.053"/></svg>
+                        </div>
+                        <select class="search-panel_item_sort" disabled></select>
+                        <div class="search-panel_item_title">Content:</div>
+                        <input type="text" placeholder="Enter keywords">
+                    </div>
+                    <button onclick="searchBlog()">Search</button>
+                </div>
+            </div>
+            <div id="search-result">
+                <h1 id="search-result_title">Search result</h1>
+                <p>
+                    <span id="counter_matched-blog">0</span>
+                    /
+                    <span id="counter_total-blog">0</span>
+                    blog(s)
+                </p>
+                <div id="search-result_container">
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/js/include_body.js" defer></script>
+</body>
+</html>
