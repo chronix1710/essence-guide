@@ -6,7 +6,7 @@ Welcome to Essence Guide! This site provides Essence (Easy Short Solid Essential
 
 # Author
 
-![Essence Guide's banner](https://chronix1710.github.io/essence-guide/asset/chronix1710.png)
+![Essence Guide's banner](https://chronix1710.github.io/essence-guide/asset/author_chronix1710.png)
 
 I'm the owner and main author of this blogging site. I like writing detailed guides from the perspective of both tech consumer and developer. I am also interested in other topics like language learning, self-development, world views,…
 
