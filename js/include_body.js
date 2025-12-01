@@ -194,7 +194,7 @@ function enableCommmentSection() {
     script.setAttribute(`crossorigin`, `anonymous`);
 
     // Get current light/dark mode
-    const mode = localStorage.getItem(`mode`);
+    let mode = localStorage.getItem(`mode`);
     if (!mode) {
         // Light mode as default
         mode = `light`;
@@ -273,8 +273,8 @@ function enableCommmentSection() {
     }
 
     // Apply light/dark mode
-    const mode_key = `mode`;
-    const mode = localStorage.getItem(mode_key);
+    let mode_key = `mode`;
+    let mode = localStorage.getItem(mode_key);
     if (!mode) {
         if (window.matchMedia(`(prefers-color-scheme: dark)`).matches) {
             localStorage.setItem(mode_key,`dark`);
