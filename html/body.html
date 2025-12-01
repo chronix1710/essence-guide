@@ -46,7 +46,7 @@
 <!-- Left sidebar -->
 <div id="sidebar-left" class="sidebar">
     <div id="sidebar-left_menu" class="menu">
-        <button id="button_sidebarToggle" class="button_site" onclick="sidebarToggle('left')">
+        <button id="button_sidebarLeftToggle" class="button_site" onclick="sidebarToggle('left')">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"/></svg>
         </button>
     </div>
@@ -127,25 +127,33 @@
         </div>
     </div>
     <div id="ad-before">
-        <amp-ad width="100vw" height="320"
-            type="adsense"
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7484796661959697"
+            crossorigin="anonymous"></script>
+        <!-- Ad before -->
+        <ins class="adsbygoogle"
+            style="display:block"
             data-ad-client="ca-pub-7484796661959697"
             data-ad-slot="2424624997"
-            data-auto-format="rspv"
-            data-full-width="">
-        <div overflow=""></div>
-        </amp-ad>
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </div>
     <div id="local-html"></div>
     <div id="ad-after">
-        <amp-ad width="100vw" height="320"
-            type="adsense"
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7484796661959697"
+            crossorigin="anonymous"></script>
+        <!-- Ad after -->
+        <ins class="adsbygoogle"
+            style="display:block"
             data-ad-client="ca-pub-7484796661959697"
             data-ad-slot="1512489265"
-            data-auto-format="rspv"
-            data-full-width="">
-        <div overflow=""></div>
-        </amp-ad>
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </div>
     <div id="comment-section">
         <h1 id="footer-title">Comments section</h1>
@@ -160,6 +168,9 @@
 <!-- Right sidebar -->
 <div id="sidebar-right" class="sidebar sidebar-close">
     <div id="sidebar-right_menu">
+        <button id="button_sidebarRightToggle" class="button_site" onclick="sidebarToggle('right')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"/></svg>
+        </button>
         <a title="Go to header" href="#header-title">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5V4h16v1zm14.385 2.385q.69 0 1.153.462T20 9v9.385q0 .69-.462 1.153T18.384 20H5.616q-.691 0-1.153-.462T4 18.384V9q0-.69.463-1.153t1.153-.463zm0 1H5.615q-.269 0-.442.173T5 9v9.385q0 .269.173.442t.443.173h12.769q.269 0 .442-.173t.173-.442V9q0-.27-.173-.442q-.173-.173-.442-.173M5 8.385V19z"/></svg>
         </a>

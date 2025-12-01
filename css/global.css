@@ -76,6 +76,7 @@ html {
 
 body {
     font-family: "Noto Sans", system-ui, sans-serif;
+    color: var(--color-text-heavy);
     margin: 0;
     width: 100%;
     position: relative;
@@ -92,7 +93,6 @@ body {
     background-color: var(--color-background-heavy);
     display: none;
     z-index: 2;
-    flex-direction: row;
     margin: 0;
     padding: 0;
 }
@@ -109,8 +109,8 @@ body {
     }
 
     button {
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -155,6 +155,7 @@ body {
         border-bottom: 2px solid var(--color-background-light);
         background-color: var(--color-background-medium);
         display: flex;
+        flex-wrap: wrap;
 
         .image-menu_submenu {
             display: flex;
@@ -166,7 +167,6 @@ body {
     #image-caption {
         text-align: center;
         font-size: calc(var(--font-base)*0.750);
-        color: var(--color-text-heavy);
 
         border-top: 2px solid var(--color-background-light);
         padding: 10px;
@@ -225,7 +225,6 @@ body {
 
     p {
         font-size: calc(var(--font-base)*0.875);
-        color: var(--color-text-heavy);
 
         &.text_subtitle {
             font-family: "Noto Serif", serif;
@@ -238,7 +237,6 @@ body {
 
     span {
         font-size: calc(var(--font-base)*0.875);
-        color: var(--color-text-heavy);
     }
 }
 
@@ -374,7 +372,6 @@ body {
 
             &:hover {
                 background-color: var(--color-background-medium);
-                color: var(--color-text-heavy);
                 font-weight: bolder;
             }
         }
@@ -439,6 +436,11 @@ body {
         justify-content: flex-end;
         gap: 5px;
         padding: 5px;
+
+        #button_sidebarRightToggle {
+            stroke-width: 0;
+            margin-right: auto;
+        }
 
         button, a {
             display: flex;
@@ -523,7 +525,7 @@ body {
 
 /* Main content */
 #section-middle {
-    flex: 1 0 300px;
+    flex: 1 1 300px;
     overflow: auto;
     position: relative;
     height: 100vh;
@@ -572,14 +574,12 @@ body {
                 margin: 5px;
                 font-size: calc(var(--font-base)*0.750);
                 background-color: var(--color-background-heavy);
-                color: var(--color-text-heavy);
             }
         }
     }
 
     #comment-section {
         background-color: var(--color-background-heavy);
-        color: var(--color-text-heavy);
         padding: 20px;
 
         a {
@@ -625,7 +625,6 @@ body {
 
             span {
                 font-size: calc(var(--font-base)*0.875);
-                color: var(--color-text-heavy);
             }
 
             #tag-container {
@@ -782,7 +781,6 @@ body {
 
             * {
                 font-family: 'Noto Sans', sans-serif;
-                color: var(--color-text-heavy);
                 line-height: 1.5;
                 text-align: justify;
                 text-justify: inter-word;
@@ -980,6 +978,10 @@ body {
                 flex-direction: column;
                 gap: 10px;
 
+                * {
+                    color: var(--color-text-heavy);
+                }
+
                 .search-panel_item {
                     display: flex;
                     justify-content: flex-start;
@@ -1082,6 +1084,7 @@ body {
             .search-result_item {
                 display: flex;
                 align-items: stretch;
+                flex-wrap: wrap;
                 gap: 10px;
                 box-sizing: border-box;
                 padding: 5px;
@@ -1094,7 +1097,7 @@ body {
                 }
 
                 .search-result_item_banner {
-                    flex: 4 4;
+                    flex: 4 4 200px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -1112,7 +1115,7 @@ body {
                 .search-result_item_info {
                     display: flex;
                     flex-direction: column;
-                    flex: 6 6;
+                    flex: 6 6 300px;
 
                     .text_title {
                         text-align: left;
@@ -1135,7 +1138,6 @@ body {
                     span {
                         font-size: calc(var(--font-base)*0.875);
                         font-size: calc(var(--font-base)*0.875);
-                        color: var(--color-text-heavy);
                     }
 
                     .tag-container {
