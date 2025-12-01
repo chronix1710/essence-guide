@@ -1,7 +1,7 @@
 /* CSS font face */
 @font-face {
     font-family: "Noto Sans";
-    src: url("/font/NotoSans-Regular.woff2") format("woff2");
+    src: url("/essence-guide/font/NotoSans-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: "Noto Sans Mono";
-    src: url("/font/NotoSansMono-Regular.woff2") format("woff2");
+    src: url("/essence-guide/font/NotoSansMono-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: "Noto Serif";
-    src: url("/font/NotoSerif-Regular.woff2") format("woff2");
+    src: url("/essence-guide/font/NotoSerif-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -25,7 +25,7 @@
 
 @font-face {
     font-family: "Noto Emoji";
-    src: url("/font/NotoEmoji-Regular.woff2") format("woff2");
+    src: url("/essence-guide/font/NotoEmoji-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -299,7 +299,7 @@ body {
 
 #sidebar-left {
     position: relative;
-    background-image: url("/asset/background.png");
+    background-image: url("/essence-guide/asset/background.png");
     background-repeat: repeat;
     background-size: cover;
     background-position: center;

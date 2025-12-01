@@ -195,7 +195,6 @@ function enableCommmentSection() {
 
     // Get current light/dark mode
     const mode = localStorage.getItem(`mode`);
-    console.log(mode);
     if (!mode) {
         // Light mode as default
         mode = `light`;
@@ -229,7 +228,7 @@ function enableCommmentSection() {
     const body = document.body;
     const main = document.getElementById(`main`);
     try {
-        const resp = await fetch(`/html/body.html`);
+        const resp = await fetch(`/essence-guide/html/body.html`);
         if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
         const html = await resp.text();
         const template = document.createElement(`template`);

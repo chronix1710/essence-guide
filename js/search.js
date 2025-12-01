@@ -54,7 +54,7 @@ async function searchPrepare() {
     // Fetch the manifest file (blogs.json)
     let blogPaths = [];
     try {
-        const response = await fetch(`/blog/blogs.json`);
+        const response = await fetch(`/essence-guide/blog/blogs.json`);
         if (!response.ok) throw new Error("Could not load blogs.json");
         blogPaths = await response.json();
     } catch (error) {
@@ -373,7 +373,6 @@ function handleURLParameters() {
             // Populate the input
             contentInput.value = contentQuery;
             // Trigger the search function immediately
-            console.log(`Auto-searching for parameter: "${contentQuery}"`);
             searchBlog();
         }
     }

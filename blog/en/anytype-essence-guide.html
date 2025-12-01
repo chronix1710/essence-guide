@@ -3,7 +3,7 @@
 <head>
     <!-- Global head elements -->
     <noscript><p>Please enable JavaScript to fully experience this site!</p></noscript>
-    <script src="/js/include_head.js" defer></script>
+    <script src="/essence-guide/js/include_head.js" defer></script>
 
     <!-- Local head elements -->
     <title>Anytype Essence Guide | Essence Guide's Blog</title>
@@ -36,7 +36,7 @@
             <p class="text_subtitle">The only all-in-one Anytype tutorial you will ever need to read</p>
             <div id="author-container">
                 <a href="" target="_blank" class="author">
-                    <img src="/asset/author_chronix1710.png" alt="The author's picture">
+                    <img src="/essence-guide/asset/author_chronix1710.png" alt="The author's picture">
                     <span class="author-name">chronix1710</span>
                     <span class="author-role">(Author)</span>
                 </a>
@@ -58,7 +58,7 @@
                 </a>
             </div>
             <figure class="blog-banner">
-                <img src="/asset/banner_anytype-essence-guide.png" alt="The blog's banner">
+                <img src="/essence-guide/asset/banner_anytype-essence-guide.png" alt="The blog's banner">
                 <figcaption></figcaption>
             </figure>
         </header>
@@ -72,11 +72,11 @@
             <h1 class="block-heading1">Background</h1>
             <p class="block-paragraph">OK, let's establish the background first. I have been a Notion user and Obsidian user for a long time. Recently, I switched to Anytype for privacy and synchronization purpose. To be honest, I have been using Anytype for only 3 months. However, I spent 8 - 10 hours daily watching tutorials, exploring features, creating, and deleting a lot of spaces. I have also made two templates (in the word of Anytype: "experience") for the 2 most popular use case. You can check it out on Anytype Experience Gallery:</p>
             <figure>
-                <img src="/asset/anytype-essence-pkm.png" alt="Essence PKM - Anytype experience">
+                <img src="/essence-guide/asset/anytype-essence-pkm.png" alt="Essence PKM - Anytype experience">
                 <figcaption>Anytype - Essence PKM (<a href="https://gallery.any.coop/?experience=essence_pkm" target="_blank">https://gallery.any.coop/?experience=essence_pkm</a>) - a good experience to start your PKM (Personal Knowledge Management) journey that comes with detailed methodology.</figcaption>
             </figure>
             <figure>
-                <img src='/asset/anytype-essence-tkm.png' alt="Essence TKM - Anytype experience">
+                <img src="/essence-guide/asset/anytype-essence-tkm.png" alt="Essence TKM - Anytype experience">
                 <figcaption>Anytype - Essence TKM (<a href="https://gallery.any.coop/?experience=essence_tkm" target="_blank">https://gallery.any.coop/?experience=essence_tkm</a>) - a TKM (Technological Knowledge Management) experience for tech consumers and developers to learn digital knowledge, collect tech, and manage to project.</figcaption>
             </figure>
             <p class="block-paragraph">Therefore, I think I am experienced enough to write a decent tutorial so don't worry that it would a waste of time to read. With that said, I am happily open to any suggestions, questions, and corrections.</p>
@@ -95,7 +95,7 @@
             <p class="block-paragraph">The outer layer is easy to understand.</p>
             <p class="block-paragraph">All of your information exists in a thing called <code class="text-highlight">Vault</code>, which has a passphrase to protect. The vault is linked to an <code class="text-highlight">Account</code> so that Anytype can attach subscription, cloud storage, and synchronization between devices. Inside a vault, there is <code class="text-highlight">Space</code>, which can be shared with others. Data inside a space doesn't interact with data in other spaces.</p>
             <figure>
-                <img src="/asset/anytype_the-outer-layer.png" alt="Anytype's the outer layer">
+                <img src="/essence-guide/asset/anytype_the-outer-layer.png" alt="Anytype's the outer layer">
                 <figcaption>
                     <span class="text-bold">The outer layer</span>. Above is the list of <code class="text-highlight">Space</code> in the <code class="text-highlight">Vault</code>. Below is the <code class="text-highlight">Account</code>.
                 </figcaption>
@@ -106,7 +106,7 @@
             <p class="block-paragraph">You are probably informed about concepts like <code class="text-highlight">Object</code>, <code class="text-highlight">Type</code>, <code class="text-highlight">Property</code>, <code class="text-highlight">Collection</code>, <code class="text-highlight">Query</code>, <code class="text-highlight">Widget</code> in this layer on Anytype's documentation and possibly wonder about ambiguous concepts like <code class="text-highlight">Relation</code>, <code class="text-highlight">Page</code>, <code class="text-highlight">List</code>, <code class="text-highlight">Set</code>, <code class="text-highlight">Bookmark</code>. I will explain them later.</p>
             <p class="block-paragraph">First, I guess you are probably familiar with concepts like <code class="text-highlight">File</code> and <code class="text-highlight">Folder</code> on Operating System or on other note-taking apps. I will use this as an analogy. This is the traditional way of storing information. Let's say you can pack information into a file. However, a file cannot contain another file so we need something that can contain file and others, which includes itself. It is a folder.</p>
             <figure>
-                <img src="/asset/obsidian_file-storage-approach.png" alt="Obsidian's file storage approach">
+                <img src="/essence-guide/asset/obsidian_file-storage-approach.png" alt="Obsidian's file storage approach">
                 <figcaption>
                     How <a href="https://obsidian.md/"><span class="text-bold"> Obsidian</span></a> (a popular note-taking app) stores information using <code class="text-highlight">File</code> and <code class="text-highlight">Folder</code> similar to operating system.
                 </figcaption>
@@ -114,14 +114,14 @@
             <p class="block-paragraph">However, you will soon run into a problem. Information is not file, they are related to each other. They can contain one another, have multiple parents, have multiple children or even worse be both a parent and a child of another. For example, if you were classifying food, how would you fit tomato? Under fruit folder? Under vegetables folder? If stored under both, you will have duplicate information. You could think of a quick solution: "What if I link (create a shortcut of) them to other locations?". This does not avoid another bigger problem you will encounter that is "What if you need to move the folder or change the entire hierarchy?". No matter where you store the file, there will eventually be a need for moving them and when those needs come, expect some troubles.</p>
             <p class="block-paragraph">Anytype's approach to this repository problem is to store all files under one or several big fixed folder, that one is the <code class="text-highlight">Graph</code> of the space you see at the home screen of Anytype).</p>
             <figure>
-                <img src="/asset/anytype_graph-object.png" alt="Anytype's Graph">
+                <img src="/essence-guide/asset/anytype_graph-object.png" alt="Anytype's Graph">
                 <figcaption>
                     The <code class="text-highlight">Graph</code> of every space. It is accessible through the immediate top right button of the right panel.
                 </figcaption>
             </figure>
             <p>Then we define the hierarchy by creating relationships between those files and put all of those derivative information in subsequent folders. For example, we have three things: tomato, vegetable, fruit. I have a folder named "objects" to store the those three objects. I can now simply create 2 relationships: <span class="text-italic">Tomato is Fruit</span> and <span class="text-italic">Tomato is Vegetables</span> and put them in a folder named "relations". This is precisely what Anytype does if you unpack any exported spaces.</p>
             <figure>
-                <img src="/asset/anytype_file-storage-approach.png" alt="Anytype's file storage approach">
+                <img src="/essence-guide/asset/anytype_file-storage-approach.png" alt="Anytype's file storage approach">
                 <figcaption>
                     The contents of any unpacked Anytype exported spaces. <span class='text-bold'>Objects</span> are put in the folder "objects". <span class='text-bold'>Files</span> (any things you upload like images, videos, documents) are put in the folder "files". <span class='text-bold'>Relationships</span> between objects are put in the folder "relations". <span class='text-bold'>Properties</span> of objects are put in the folder "relationsOptions". <span class='text-bold'>Templates</span> (different blueprints for objects in types) are put in the folder "templates". <span class='text-bold'>Types</span> (reusable blueprints for objects) are put in the folder "templates". <span class='text-bold'>Information</span> about the space itself is represented by the file "profile".
                 </figcaption>
@@ -130,7 +130,7 @@
             <p class="block-paragraph">This approach is called <span class="text-bold">Object-oriented</span> (the term some other note-taking apps advertise themselves as), in contrast to the <span class="text-bold">Directory tree (Folder & File)</span>, which have been deeply entrenched in operating system users for years. That's why I believe most of Anytype's users find themselves incredibly disoriented when they navigate throughout the app.</p>
             <p class="block-paragraph">This is analogous to the concept of graph in mathematics. The <code class="text-highlight">Object</code> is vertex, the <code class="text-highlight">Property</code> is weight, and the <code class="text-highlight">Relation</code> is edge. The only difference is that there are only 2 kinds of relations in Anytype's graph which is link (which object is linked to which object) and type (which object belong to which type). They are respectively represented by a line without label and one-way arrow with the label "Object type" when you hover the object on the Anytype's graph.</p>
             <figure>
-                <img src="/asset/anytype_relation-on-graph.png" alt="Anytype's file storage approach">
+                <img src="/essence-guide/asset/anytype_relation-on-graph.png" alt="Anytype's file storage approach">
                 <figcaption>
                     <code class='text-highlight'>Relation</code> on <code class='text-highlight'>Graph</code>. "Objec type" relationship (which object belong to which type) is represented by orange lines with an arrow pointing to the type and the label "Object type". "Link" relationship (which object is linked to which object) is represented by orange line without arrows and label.
                 </figcaption>
@@ -138,14 +138,14 @@
             <p class="block-paragraph">Now back to other concepts. So, basically every piece of information is an <code class="text-highlight">Object</code>. Objects can have <code class="text-highlight">Relation</code> with each other. Each object has some <code class="text-highlight">Property</code> (think of "metadata") - additional information about that object that exists along with the object itself (not inside the object). Those are the three basic entities that exist in Anytype. From now, when I refer to Entity, the term I come up on my own, what I means is one of those three.</p>
             <p class="block-paragraph">We have understood <code class="text-highlight">Relation</code>. Now let's learn the next easy one: Property. <code class="text-highlight">Property</code> can be user-defined (we can create it on our own) - <code class="text-highlight">User Properties</code> and system-defined (dynamic things like dates, links,… which we can't manually input or delete) <code class="text-highlight">System Properties</code>. When you go <code class="text-highlight">Anytype → Settings → Space → Properties</code> you will see that they are separated.</p>
             <figure>
-                <img src="/asset/anytype_two-kind-of-property.png" alt="Anytype's two kind of property">
+                <img src="/essence-guide/asset/anytype_two-kind-of-property.png" alt="Anytype's two kind of property">
                 <figcaption>
                     Two kinds of <code class='text-highlight'>Property</code> - <code class='text-highlight'>User Properties</code> ("My properties" in the picture) & <code class='text-highlight'>System Properties</code> - are separated.
                 </figcaption>
             </figure>
             <p class="block-paragraph">Every <code class="text-highlight">Property</code> has one and only one <code class="text-highlight">Class</code> (I know I can use the term "Type" here but I don't want you to be confused with "Type" of <code class="text-highlight">Object</code>). Once a <code class="text-highlight">Class</code> is set for a <code class="text-highlight">Property</code>, it cannot be changed.</p>
             <figure>
-                <img src="/asset/anytype_property-class.png" alt="Anytype's property class">
+                <img src="/essence-guide/asset/anytype_property-class.png" alt="Anytype's property class">
                 <figcaption>
                     List of <code class='text-highlight'>Class</code> in "<span class='text-bold'>Create a new Property</span>" shows up when users create a new <code class='text-highlight'>Type</code>.
                 </figcaption>
@@ -166,7 +166,7 @@
             <p class="block-paragraph">We have understood <code class="text-highlight">Property</code>. Now let's talk about the final boss: <code class="text-highlight">Object</code>. As I have mentioned, there are 2 kinds of <code class="text-highlight">Relation</code> on <code class="text-highlight">Graph</code>. This give rise to 2 (I know you are probably wondering that you heard like 10 different types of objects but stay with me) basic kinds of Object. <code class="text-highlight">Object</code> that is pointed to by the arrow with the label "Object" is called <code class="text-highlight">Type</code>. The other <code class="text-highlight">Object</code> kind on the other side of the arrow without label is called <code class="text-highlight">Instance</code> (this is another term I come up with for the sake of being accurate and distinguishable). There exist other Object kinds which are neither <code class="text-highlight">Type</code> nor <code class="text-highlight">Instance</code>.</p>
             <p class="block-paragraph">Every existing <code class="text-highlight">Object</code> (not just Instance) must have a <code class="text-highlight">Type</code> and belong to only one <code class="text-highlight">Type</code>. This even applies to <code class="text-highlight">Type</code> itself. All <code class="text-highlight">Type</code> objects belong to the ultimate object named "Type". They are reflected by a system <code class="text-highlight">Property</code> called "Object type". Once an <code class="text-highlight">Object</code> is created with a certain user <code class="text-highlight">Type</code>, you cannot change its "Object type" as it is a system property.</p>
             <figure>
-                <img src="/asset/anytype_object-search.png" alt="Anytype's Search">
+                <img src="/essence-guide/asset/anytype_object-search.png" alt="Anytype's Search">
                 <figcaption>
                     When you search for objects, their name and their property "Object type" show up. You can see the highlighted object "Dashboards" is an <code class='text-highlight'>Object</code> that has the kind of <span class='text-bold'>Type</span> and its <code class='text-highlight'>Property</code> "Object type" is "<span class='text-bold'>Type</span>".
                 </figcaption>
@@ -180,7 +180,7 @@
                 <li><span class="text-bold">Properties</span>: what Property all Instance of that Type shares are.</li>
             </ul>
             <figure>
-                <img src="/asset/anytype_interface-create-new-type.png" alt="Anytype's interface for creating a new type">
+                <img src="/essence-guide/asset/anytype_interface-create-new-type.png" alt="Anytype's interface for creating a new type">
                 <figcaption>
                     The interface for creating a new type. The left panel displays how the page looks like. The right panel has two sections: <span class='text-bold'>Format</span> and <span class='text-bold'>Properties</span>.
                 </figcaption>
@@ -198,7 +198,7 @@
                 <li>
                     <p class="block-paragraph"><span class="text-bold">List</span>: Why would you need this format? Well, for Page, you can view the information about an Object when you enter it, but what if I want to view all of its Property and additionally, not just one but two, ten, hundreds of objects' Property at the same time for visualization. This is where List comes in handy. The concept is similar to both "Folder" and "Database" at the same time. When you choose this format, you don't want to enter any information about this object as there is no empty space for you to type your information. Instead, you care about the properties of the objects inside this object. Just like any objects, objects with "List" format can link to other objects, including objects with "List" format themselves (note that I use Object not just Instance). Unlike objects with "Page" format, the linked objects only show up once and are organized in a List (default way but there are other ways for organization), hence the name "List".</p>
                     <figure>
-                        <img src="/asset/anytype_interface-list-format.png" alt="Anytype's interface of List format">
+                        <img src="/essence-guide/asset/anytype_interface-list-format.png" alt="Anytype's interface of List format">
                         <figcaption>
                             The interface for linking other objects to this object with "List" format. On the top left is the list of <code class='text-highlight'>View</code>. On the right is in order: <span class='text-bold'>Search</span>, <span class='text-bold'>Filter</span>, <span class='text-bold'>Sort</span>, <span class='text-bold'>View settings</span>, and <span class='text-bold'>Creating or inserting objects</span>.
                         </figcaption>
@@ -211,7 +211,7 @@
                         <li><span class="text-bold">View</span>: how you organize the objects inside. Each <code class="text-highlight">View</code> is a combination of <code class="text-highlight">View settings</code>, <code class="text-highlight">Sort</code>, and <code class="text-highlight">Filter</code> creating a powerful way to organize and display linked objects. View can be configured with View settings. There are 6 kinds of views. "<span class="text-bold">Grid</span>" displays linked objects with properties in a table format where rows and columns size are automatically aligns (This allow you to perform some columns operation like finding the Sum, Average, or Percentage. "<span class="text-bold">Gallery</span>" displays linked objects in a tile format where properties are contained inside objects' tiles. "<span class="text-bold">List</span>" displays linked objects with properties in a list where the size of them don't line up like columns and rows in "Grid" view. "<span class="text-bold">Kanban</span>" displays linked objects in a board format where boards group objects based on certain properties. "<span class="text-bold">Calendar</span>" displays linked objects in a calendar format where objects are placed on certain dates. "<span class="text-bold">Graph</span>" displays linked objects in a graph format where relations between linked objects are focused on.</li>
                     </ul>
                     <figure>
-                        <img src="/asset/anytype_all-kind-of-view.png" alt="Anytype's all kinds of View">
+                        <img src="/essence-guide/asset/anytype_all-kind-of-view.png" alt="Anytype's all kinds of View">
                         <figcaption>
                             All different kinds of <code class='text-highlight'>View</code> for objects with <code class='text-highlight'>List</code> format.
                         </figcaption>
@@ -225,14 +225,14 @@
             </ul>
             <p class="block-paragraph">Now, let's move to <code class="text-highlight">Template</code>. Imagine you are doing your homework and have to submit your assignment. Your teacher requires you to include your personal information inside the document. Sure, you can always create a section to enter your personal information or simply copy from the previous ones. However, up to one point, you may want to have the same section across all your homework and most importantly, the part should reflect the changes you have made to all objects. <code class="text-highlight">Template</code> exist for this purpose.</p>
             <figure>
-                <img src="/asset/anytype_template-in-new-type.png" alt="Anytype's template configuration in creating a new type">
+                <img src="/essence-guide/asset/anytype_template-in-new-type.png" alt="Anytype's template configuration in creating a new type">
                 <figcaption>
                     Templates only show up for configuration after you create a new <code class='text-highlight'>Type</code>. It is below the panel for <code class='text-highlight'>Format</code>.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><code class="text-highlight">Template</code> is a very special kind of <code class="text-highlight">Object</code>. Whatever the <code class="text-highlight">Type</code> is, all <code class="text-highlight">Template</code> instances belong to the Type named "<span class="text-bold">Template</span>". However, they share the <span class="text-bold">Format</span> and <span class="text-bold">Properties</span> of the <code class="text-highlight">Type</code> they are associated with. More interestingly, their association with <code class="text-highlight">Type</code> is nowhere to be found through Property as they do not show up on the <code class="text-highlight">Graph</code>. The association can only be known when you click into that <code class="text-highlight">Template</code> object.</p>
             <figure>
-                <img src="/asset/anytype_template-on-the-graph.png" alt="Anytype's Template on the Graph">
+                <img src="/essence-guide/asset/anytype_template-on-the-graph.png" alt="Anytype's Template on the Graph">
                 <figcaption>
                     On the left, all related system properties of <code class='text-highlight'>Template</code> are displayed but there is no property that show their associations with their respective <code class='text-highlight'>Type</code>. On the right, <code class='text-highlight'>Type</code> "Templates" show no <code class='text-highlight'>Instance</code> even though on the left there are plenty.
                 </figcaption>
@@ -240,7 +240,7 @@
             <p class="block-paragraph">Finally, let's get to <span class="text-bold">Properties</span>.</p>
             <p class="block-paragraph"><code class="text-highlight">Property</code> of a <code class="text-highlight">Type</code> can exist in 3 places: <span class="text-bold">Header</span>, <span class="text-bold">Properties</span> panel, and <span class="text-bold">Hidden</span>.</p>
             <figure>
-                <img src="/asset/anytype-properties-interface.png" alt="Anytype's interface to configure properties">
+                <img src="/essence-guide/asset/anytype-properties-interface.png" alt="Anytype's interface to configure properties">
                 <figcaption>
                     The interface to configure <span class='text-bold'>Properties</span> when creating a new <code class='text-highlight'>Type</code> or modifying an existing one.
                 </figcaption>
@@ -248,28 +248,28 @@
             <ul class="block-list list-bullet">
                 <li><code class="text-highlight">Property</code> in <span class="text-bold">Header</span> are displayed below the name of an object when you enter it.</li>
                 <figure>
-                    <img src="/asset/anytype_property-different-appearance.png" alt="Anytype's property's different appearance">
+                    <img src="/essence-guide/asset/anytype_property-different-appearance.png" alt="Anytype's property's different appearance">
                     <figcaption>
                         On the left is the list of header properties with "Properties view" of "List" in an object with "Layout" of "List". On the right is the list of header properties with "Properties view" of "Line" in an object with "Layout" of "Page".
                     </figcaption>
                 </figure>
                 <li><code class="text-highlight">Property</code> in <span class="text-bold">Properties panel</span> can be displayed in different View for objects with "Layout" of "List". Note that in order for the property to show up in the view, you have to enable them in the Properties section inside View settings.</li>
                 <figure>
-                    <img src="/asset/anytype_properties-section-view-settings.png" alt="Anytype's Properties section inside View settings">
+                    <img src="/essence-guide/asset/anytype_properties-section-view-settings.png" alt="Anytype's Properties section inside View settings">
                     <figcaption>
                         The <span class='text-bold'>Properties section</span> inside <span class='text-bold'>View settings</span> is used to display <code class='text-highlight'>Property</code> that are place in <span class='text-bold'>Properties panel</span>.
                     </figcaption>
                 </figure>
                 <li><code class="text-highlight">Property</code> in <span class="text-bold">Hidden</span> are not displayed and can only be access through Local properties panel.</li>
                 <figure>
-                    <img src="/asset/anytype_properties-panel.png" alt="Anytype's Properties panel">
+                    <img src="/essence-guide/asset/anytype_properties-panel.png" alt="Anytype's Properties panel">
                     <figcaption>
                         Property that are place in Properties panel accessed by The Properties panel inside every Object.
                     </figcaption>
                 </figure>
                 <li><p><code class="text-highlight">Object</code> can have <code class="text-highlight">Property</code> that are not specified by their <code class="text-highlight">Type</code>. These are call <span class="text-bold">Local properties</span>. Local properties are very helpful when you want to extend a certain group of objects of a Type which have properties that you don't want to include in other objects of that Type. Let's say you build a Type to represent the "Shopping item". At low level, they all share the same set of Properties. They can be name, price, SKU, arrival date, availability,… At high level, they might have different properties based on their nature. Shirts, shoes,… may need "Size". Computers, laptops may need "RAM", "CPU". Foods, cosmetics may need "Expired date". Inserting local properties to certain objects does not affect the other.</p></li>
                 <figure>
-                    <img src="/asset/anytype_local-properties.png" alt="Anytype's Properties panel">
+                    <img src="/essence-guide/asset/anytype_local-properties.png" alt="Anytype's Properties panel">
                     <figcaption>
                         Local <code class='text-highlight'>Property</code> accessed by the <span class='text-bold'>Properties panel</span> inside every Object.
                     </figcaption>
@@ -280,7 +280,7 @@
             </p>
             <p class="block-paragraph">Just like <span class="text-bold">Property</span> can be further divided into <span class="text-bold">User property</span> and <span class="text-bold">System property</span>, <span class="text-bold">Type</span> can be further divided into <span class="text-bold">User property</span> and <span class="text-bold">System type</span>.</p>
             <figure>
-                <img src="/asset/anytype_system-type.png" alt="Anytype's System type">
+                <img src="/essence-guide/asset/anytype_system-type.png" alt="Anytype's System type">
                 <figcaption>
                     All Type including <span class='text-bold'>System type</span> accessed in <code class='text-highlight'>Anytype → Settings → Space → Object Types</code>. 
                 </figcaption>
@@ -289,28 +289,28 @@
             <ul class="block-list list-bullet">
                 <li><span class="text-bold">Media</span> <code class="text-highlight">Type</code>: <code class="text-highlight">Audio</code>, <code class="text-highlight">Image</code>, <code class="text-highlight">Video</code>, <code class="text-highlight">File</code>. They are <code class="text-highlight">Type</code> to represent the system files you want to include in your objects. They are useful when you want to organize and modify all objects belonging to that <code class="text-highlight">Type</code>.</li>
                 <figure>
-                    <img src="/asset/anytype_media-type.png" alt="Anytype's Media type">
+                    <img src="/essence-guide/asset/anytype_media-type.png" alt="Anytype's Media type">
                     <figcaption>
                         Audio <code class='text-highlight'>Type</code>, Image <code class='text-highlight'>Type</code>, Video <code class='text-highlight'>Type</code>, File Type respectively from left to right, top to bottom.
                     </figcaption>
                 </figure>
                 <li><span class="text-bold">Space Member</span> <code class="text-highlight">Type</code>: represent the members in the space.</li>
                 <figure>
-                    <img src="/asset/anytype_space-member-type.png" alt="Anytype's Space Member type">
+                    <img src="/essence-guide/asset/anytype_space-member-type.png" alt="Anytype's Space Member type">
                     <figcaption>
                         Space member <code class='text-highlight'>Type</code>.
                     </figcaption>
                 </figure>
                 <li><span class="text-bold">Chat</span> <code class="text-highlight">Type</code>: represent conversations.</li>
                 <figure>
-                    <img src="/asset/anytype_chat-type.png" alt="Anytype's Chat type">
+                    <img src="/essence-guide/asset/anytype_chat-type.png" alt="Anytype's Chat type">
                     <figcaption>
                         Chat <code class='text-highlight'>Type</code>.
                     </figcaption>
                 </figure>
                 <li><span class="text-bold">Template</span> <code class="text-highlight">Type</code>: explained above.</li>
                 <figure>
-                    <img src="/asset/anytype-template-type.png" alt="Anytype's Template type">
+                    <img src="/essence-guide/asset/anytype-template-type.png" alt="Anytype's Template type">
                     <figcaption>
                         Template <code class='text-highlight'>Type</code>.
                     </figcaption>
@@ -319,7 +319,7 @@
                 </li>
                 <p class="block-callout callout-note"> <code class="text-highlight">Collection</code> is one of the two system <code class="text-highlight">Type</code> that allow its objects to change their <code class="text-highlight">Type</code> but only into <code class="text-highlight">Type</code> with "Format" of "List" by clicking on the property "Object type" inside each object. This is useful when you have something to include immediately then you can think of a suitable type to put it into.</p>
                 <figure>
-                    <img src="/asset/anytype_collection-type.png" alt="Anytype's Collection type">
+                    <img src="/essence-guide/asset/anytype_collection-type.png" alt="Anytype's Collection type">
                     <figcaption>
                         Collection <code class='text-highlight'>Type</code>.
                     </figcaption>
@@ -327,28 +327,28 @@
                 <li><span class="text-bold">Page</span> <code class="text-highlight">Type</code>: <code class="text-highlight">Page</code> objects are just objects with "Format" of "Page". This is a <code class="text-highlight">Type</code> Anytype have created readily for you without any additional properties. <code class="text-highlight">Page</code> is also called "Note" by some people in the community (please mind that this is a non-standard name and maybe a misnomer). Note that you can create a <code class="text-highlight">Type</code> similar to <code class="text-highlight">Page</code> but the objects of that <code class="text-highlight">Type</code> won't be linked in the <code class="text-highlight">Type</code> "Page" itself. There is no universal Type that allows you to access all objects with "Format" of "Page".</li>
                 <p class="block-callout callout-note"><span class="text-bold">Page</span> is one of the two system <code class="text-highlight">Type</code> that allow its objects to change their <code class="text-highlight">Type</code> but only into <code class="text-highlight">Type</code> with "Format" of "List" by clicking on the property "Object type" inside each object. This is useful when you have something to note immediately then you can think of a suitable type to put it into.</p>
                 <figure>
-                    <img src="/asset/anytype_page-type.png" alt="Anytype's Page type">
+                    <img src="/essence-guide/asset/anytype_page-type.png" alt="Anytype's Page type">
                     <figcaption>
                         Page <code class='text-highlight'>Type</code>.
                     </figcaption>
                 </figure>
                 <li><span class="text-bold">Query</span> <code class="text-highlight">Type</code>: <code class="text-highlight">Query</code> objects are similar to <code class="text-highlight">Collection</code> in the fact that they are just objects with "Format" of "List". In fact, Anytype offers a feature that you can turn any Query object into <code class="text-highlight">Collection</code> object. So, why do we need another kind of Type? Imagine this scenario. You want to view and organize all Objects that have Property related time. Those can be the "deadline" of "Work assignment" objects, the "submission date" of "Schoolwork" objects, the "arrival date" of "Shopping order" objects, the "observation date" of "Holidays" objects, the "Due date" of "Finance terms" objects,… Sure, you can create a <code class="text-highlight">Collection</code> object to link all of them but don't you think it's tedious to manually include them manually every time you create a new object which has time-sensitive <code class="text-highlight">Property</code>. Plus, you have to make sure that you don't leave anything out and start from the beginning. This is where <code class="text-highlight">Query</code> comes to the rescue! <code class="text-highlight">Query</code> objects automatically link objects based on properties in Filter while you have to manually link objects in <code class="text-highlight">Collection</code> objects and the Filter of Collection objects only work on those manually linked objects. <code class="text-highlight">Query</code> are also useful because you can insert them into the document of objects with "Format" of "Page" (which will be explained in the inner layer).</li>
                 <figure>
-                    <img src="/asset/anytype_query-type.png" alt="Anytype's Query type">
+                    <img src="/essence-guide/asset/anytype_query-type.png" alt="Anytype's Query type">
                     <figcaption>
                         Query <code class='text-highlight'>Type</code>.
                     </figcaption>
                 </figure>
                 <li><span class="text-bold">Bookmark</span> <code class="text-highlight">Type</code>: <code class="text-highlight">Bookmark</code> objects are similar to Page in the fact that they are just objects with "Format" of "<code class="text-highlight">Page</code>". Bookmark have a useful property called "Source" which you can input any URL and Anytype will automatically retrieve the icon, the title, and the description of that online resource. This is handy for those who want to capture (or popular term "clip") websites, articles, blogs,… and put them inside Anytype.</li>
                 <figure>
-                    <img src="/asset/anytype_bookmark-type.png" alt="Anytype's Bookmark type">
+                    <img src="/essence-guide/asset/anytype_bookmark-type.png" alt="Anytype's Bookmark type">
                     <figcaption>
                         Bookmark <code class='text-highlight'>Type</code>.
                     </figcaption>
                 </figure>
                 <li><span class="text-bold">Date</span> <code class="text-highlight">Type</code>: <code class="text-highlight">Date</code> objects automatically link every <code class="text-highlight">Entity</code> (this includes <code class="text-highlight">Object</code> and <code class="text-highlight">Relation</code>) whose properties with "Class" of "Date" have value of the name of that <code class="text-highlight">Date</code> object. The names of <code class="text-highlight">Date</code> objects reflect the date value that will be used to filter linked objects. Every Date object is automatically created by the system and cannot be modified.</li>
                 <figure>
-                    <img src="/asset/anytype_date-type.png" alt="Anytype's Date type">
+                    <img src="/essence-guide/asset/anytype_date-type.png" alt="Anytype's Date type">
                     <figcaption>
                         Date <code class='text-highlight'>Type</code>.
                     </figcaption>
@@ -480,7 +480,7 @@
             <p class="block-paragraph">This is where things get more straightforward but there are some nuances to be aware of.</p>
             <p class="block-paragraph">For object with "Format" of "Chat", the inside interface where you can send and receive message like a typical messenger is called <code class="text-highlight">Conversation</code> (another made-up term for the sake of differentiation).</p>
             <figure>
-                <img src="/asset/anytype_conversation-interface.png" alt="Anytype's Conversation interface">
+                <img src="/essence-guide/asset/anytype_conversation-interface.png" alt="Anytype's Conversation interface">
                 <figcaption>
                     The <code class='text-highlight'>Conversation</code> interface of any "Chat" objects.
                 </figcaption>
@@ -488,7 +488,7 @@
             <p class="block-paragraph">Well, besides the functionality of sending and receiving messages, this interface allow you to refer to any existing object within the space, thus making collaboration easier.</p>
             <p class="block-paragraph">For object with "Format" of "Page", the inside interface where you can write and place your information like a typical word processor is called <code class="text-highlight">Document</code> (another made-up term for the sake of differentiation).</p>
             <figure>
-                <img src="/asset/anytype_interface-document.png" alt="Anytype's Document interface">
+                <img src="/essence-guide/asset/anytype_interface-document.png" alt="Anytype's Document interface">
                 <figcaption>
                     The <code class='text-highlight'>Document</code> interface of any objects with "Format" of "Page". The first two rows display different style of of inline text.
                 </figcaption>
@@ -498,7 +498,7 @@
             <p class="block-paragraph">The unit of <code class="text-highlight">Block</code> is <code class="text-highlight">Text</code>. The text inside a block can have their own style, which can override the style of the block. Inline text can have multiple styling options: bold, italic, strike through, underline, link, text color, background color.</p>
             <p class="block-paragraph"><code class="text-highlight">Block</code> exist within a <code class="text-highlight">Row</code>. <code class="text-highlight">Block</code> occupies all space of the row by default when created. However, when you drag another block into a Row which have other blocks, they now share the same line and occupy an equal space. You can change the space occupied by each block by dragging the column gap between. You can drag the block into an empty <code class="text-highlight">Row</code> to make it fully occupy the <code class="text-highlight">Row</code>.</p>
             <figure>
-                <img src="/asset/anytype_interface-block-menu.png" alt="Anytype's Block menu interface">
+                <img src="/essence-guide/asset/anytype_interface-block-menu.png" alt="Anytype's Block menu interface">
                 <figcaption>
                     The <span class='text-bold'>Block menu interface</span> (you can enter this menu by hitting the character slash "/" on an empty block) for inserting different kinds of blocks.
                 </figcaption>
@@ -508,49 +508,49 @@
                 <li><span class="text-bold">Text</span>: contains text. This kind can be one of the following options: <code class="text-highlight">Text</code>, <code class="text-highlight">Title</code>, <code class="text-highlight">Heading</code>, <code class="text-highlight">Subheading</code>, <code class="text-highlight">Highlighted</code>, <code class="text-highlight">Callout</code> (like a quote). </li>
                 <li><span class="text-bold">List</span>: automatically preceded bullets. This kind can be one of the following options: <code class="text-highlight">Checkbox</code>, <code class="text-highlight">Numbered List</code>, <code class="text-highlight">Bulleted List</code>, <code class="text-highlight">Toggle</code>. <code class="text-highlight">Toggle</code> is a special kind of block, which <span class="text-bold">can contain their own content and other block</span>.</li>
                 <figure>
-                    <img src="/asset/anytype_block-text.png" alt="Anytype's Text block">
+                    <img src="/essence-guide/asset/anytype_block-text.png" alt="Anytype's Text block">
                     <figcaption>
                         Different kinds of blocks of the group "Text" (first row) and "List" (second row).
                     </figcaption>
                 </figure>
                 <li><span class="text-bold">Media</span>: content that is not text but media. This can be one of the following options: <code class="text-highlight">File</code>, <code class="text-highlight">Image</code>, <code class="text-highlight">Video</code>, <code class="text-highlight">Audio</code>, <code class="text-highlight">PDF</code>, <code class="text-highlight">Bookmark</code>, <code class="text-highlight">Code snippet</code>. Even though these entities can be only created in the inner layer, once they are created, they exist in middle layer and can only be removed in the middle layer even when are references of them in the inner layer have been removed. <code class="text-highlight">PDF</code> is a special case of <code class="text-highlight">File</code>, which can be displayed as full document inside the document interface.</li>
                 <figure>
-                    <img src="/asset/anytype_block-media.png" alt="Anytype's Media block">
+                    <img src="/essence-guide/asset/anytype_block-media.png" alt="Anytype's Media block">
                     <figcaption>
                         Different kinds of blocks of the group "Media": Image, Audio, Video, File, respectively from left to right, top to bottom.
                     </figcaption>
                 </figure>
                 <li><span class="text-bold">Embeds</span>: interactive third-party content embedded through a link. The list is exhaustive so you can check within your Anytype app.</li>
                 <figure>
-                    <img src="/asset/anytype_block-embeds.png" alt="Anytype's Embeds block">
+                    <img src="/essence-guide/asset/anytype_block-embeds.png" alt="Anytype's Embeds block">
                     <figcaption>
                         Different kinds of blocks of the group "Embeds": LaTeX, Mermaid, CodePen, Google Maps, respectively from left to right, top to bottom.
                     </figcaption>
                 </figure>
                 <li><span class="text-bold">Document</span> elements (Other): layout blocks. This can be one of the following options: <code class="text-highlight">Line divider</code>, <code class="text-highlight">Dot divider</code>, <code class="text-highlight">Table of Contents</code>, <code class="text-highlight">Table 3x3</code> (You can resize table later), <code class="text-highlight">Inline Collection</code> (open the Collection inside the Page), <code class="text-highlight">Inline Query</code> (open the Query inside the Page).</li>
                 <figure>
-                    <img src="/asset/anytype_block-other.png" alt="Anytype's Other block">
+                    <img src="/essence-guide/asset/anytype_block-other.png" alt="Anytype's Other block">
                     <figcaption>
                         Different kinds of blocks of the group "Other": Line divider, Dot divider, Table of Contents, Table, Inline Collection, Inline Query respectively from left to right, top to bottom.
                     </figcaption>
                 </figure>
                 <li><span class="text-bold">Objects</span>: references to other middle-layer objects. This can be one of the following options: <code class="text-highlight">Object</code> (create a button that links to an <code class="text-highlight">Object</code>), <code class="text-highlight">File</code> (create a button that opens a File), and <code class="text-highlight">Date</code> (create a button that links to a <code class="text-highlight">Type</code> named <code class="text-highlight">Date</code> with the value of that date), any <code class="text-highlight">Type</code> objects you have created so far.</li>
                 <figure>
-                    <img src="/asset/anytype_block-object.png" alt="Anytype's Object block">
+                    <img src="/essence-guide/asset/anytype_block-object.png" alt="Anytype's Object block">
                     <figcaption>
                         Different kinds of blocks of the group "Objects": File, Object, Date from left to right, top to bottom.
                     </figcaption>
                 </figure>
                 <li><span class="text-bold">Property elements</span>: references to this <code class="text-highlight">Object</code>'s <code class="text-highlight">Property</code>. You can drag the Property you want to insert into the document from the Properties panel within every object.</li>
                 <figure>
-                    <img src="/asset/anytype_block-property.png" alt="Anytype's Property block">
+                    <img src="/essence-guide/asset/anytype_block-property.png" alt="Anytype's Property block">
                     <figcaption>
                         Different kinds of blocks of the group "Property".
                     </figcaption>
                 </figure>
                 <li><span class="text-bold">Mentioned elements</span> (start with an address sign "@"): text elements (not occupy the entire block) that display name and link to <code class="text-highlight">Object</code>. This is extremely useful when you are working with recurring names that you want to exist inside <code class="text-highlight">Block</code> as <code class="text-highlight">Text</code> not separately as <code class="text-highlight">Block</code> like the "Object" method above.</li>
                 <figure>
-                    <img src="/asset/anytype_block-mention.png" alt="Anytype's Mentioned elements block">
+                    <img src="/essence-guide/asset/anytype_block-mention.png" alt="Anytype's Mentioned elements block">
                     <figcaption>
                         Block of "Mentioned elementes".
                     </figcaption>
@@ -566,14 +566,14 @@
             </ul>
             <h3 class="block-heading3">Screen</h3>
             <figure>
-                <img src="/asset/anytype_login-screen.png" alt="Anytype's Login screen">
+                <img src="/essence-guide/asset/anytype_login-screen.png" alt="Anytype's Login screen">
                 <figcaption>
                     The <span class='text-bold'>Login screen</span> of Anytype.
                 </figcaption>
             </figure>
             <p class="block-paragraph">If you use Anytype for the first time or just log out, you will see Anytype's <span class="text-bold">Login screen</span>. At the center of it, you can choose "I am new here" to create a new <code class="text-highlight">Vault</code> or "I already have a Key" if you want to log in your <code class="text-highlight">Vault</code> again. In the top right corner, there are buttons for you to change the interface language and change the settings.</p>
             <figure>
-                <img src="/asset/anytype_network-selection.png" alt="Anytype's ">
+                <img src="/essence-guide/asset/anytype_network-selection.png" alt="Anytype's ">
                 <figcaption>
                     The Preferences (Settings) panel of the <span class='text-bold'>Login screen</span> of Anytype.
                 </figcaption>
@@ -587,7 +587,7 @@
             <h3 class="block-heading3">Window</h3>
             <p class="block-paragraph">Now, let's move to the next layer - <code class="text-highlight">Window</code>.</p>
             <figure>
-                <img src="/asset/anytype_menu-bar.png" alt="Anytype's Menu bar">
+                <img src="/essence-guide/asset/anytype_menu-bar.png" alt="Anytype's Menu bar">
                 <figcaption>
                     The <span class='text-bold'>Menu bar</span> on the top right of every <code class='text-highlight'>Window</code>.
                 </figcaption>
@@ -598,14 +598,14 @@
                     <p class="block-paragraph"><span class="text-bold">Anytype</span>: navigate Anytype-related information. "About Anytype" shows you the current version of your Anytype. "Check for updates" will check if there are any updates and Anytype will update itself. "Settings" is where you will go to the most.</p>
                     <p class="block-paragraph">"Vault" is where you configure your "Vault". You can configure "Preferences" (Light/Dark mode, Open objects in full screen, Link to object style, Automatically show and hide sidebar, Show Anytype in system tray, Show menu bar), "Language/Region" (Spellcheck Languages, Interface Languages, Date format, Time format, Use relative dates, Week starts on), Pin code (setup screen locker for Anytype when left unattended), Login Key (super important), Local storage (manage to storage), Spaces (manage spaces), My sites (manage published objects), API keys (manage API keys).</p>
                     <figure>
-                        <img src="/asset/anytype_vault-settings.png" alt="Anytype's Vault settings">
+                        <img src="/essence-guide/asset/anytype_vault-settings.png" alt="Anytype's Vault settings">
                         <figcaption>
                             Vault settings
                         </figcaption>
                     </figure>
                     <p class="block-paragraph">"Space" is where you configure your "Space". You can configure "General" (change the name of the space, change the icon of the space, change the object for Homepage, change default object type), "Invite Members" (configure invite link, manage members), "Remote storage" (manage synced files if you use Anytype node for synchronization), Bin (manage deleted entities), "Object Types" (view all user types and system types), "Properties" (view all user properties and system properties), "Import" (by apps like Obsidian, Notion, Anytype; by file type like Markdown, HTML, TXT, CSV), "Export" (by file type Markdown or Any-Block).</p>
                     <figure>
-                        <img src="/asset/anytype_space-settings.png" alt="Anytype's Space settings">
+                        <img src="/essence-guide/asset/anytype_space-settings.png" alt="Anytype's Space settings">
                         <figcaption>
                             Space settings
                         </figcaption>
@@ -624,7 +624,7 @@
             <h3 class="block-heading3">Panel</h3>
             <p class="block-paragraph">The final layer is <code class="text-highlight">Panel</code>. <code class="text-highlight">Window</code> has three <code class="text-highlight">Panel</code>, correspondingly from left to right: <span class="text-bold">Left Panel</span>, <span class="text-bold">Middle Panel</span>, <span class="text-bold">Right Panel</span>.</p>
             <figure>
-                <img src="/asset/anytype_all-panel.png" alt="Anytype's all panels">
+                <img src="/essence-guide/asset/anytype_all-panel.png" alt="Anytype's all panels">
                 <figcaption>
                     The 3 <code class='text-highlight'>Panel</code> of every <code class='text-highlight'>Window</code> from left to right: <span class='text-bold'>Left Panel</span>, <span class='text-bold'>Middle Panel</span>, <span class='text-bold'>Right Panel</span>.
                 </figcaption>
@@ -632,7 +632,7 @@
             <p class="block-paragraph">First, the <span class="text-bold">Left Panel</span>. You can change the size of this panel by hovering the right border and dragging it towards left or right when the pointer symbol changes. You can hide this panel by clicking the button on the top left or simply dragging it towards to left border. </p>
             <p class="block-paragraph">Depending on the context, this panel can be:</p>
             <figure>
-                <img src="/asset/anytype_left-panel.png" alt="Anytype's Left panel">
+                <img src="/essence-guide/asset/anytype_left-panel.png" alt="Anytype's Left panel">
                 <figcaption>
                     Space Panel & Widget Panel of Left Panel.
                 </figcaption>
@@ -641,7 +641,7 @@
                 <li><span class="text-bold">Space Panel</span>: It contains <code class="text-highlight">Space</code> you own or join. There is an icon next to a space that shows up when the <code class="text-highlight">Space</code> is pinned. At the bottom, there are <code class="text-highlight">Account</code> setting, a button that takes you to the Anytype Experience Gallery inside the app where you can conveniently test out the experiences, and a button for help.</li>
                 <li><span class="text-bold">Widget Panel</span>: On the first row, it show your Space's name & icon; a button to create new object in the default type in the settings; and a small menu to list all user types & some system types, to create a new type, or to Import. On the second row, there are "Search" (where you can enter the "Search interface"), Invite members (enter the "Invite Members" in the Settings), "Settings" (enter Settings of the current Space). The next rows are for <code class="text-highlight">Widget</code>. Widget are buttons that show a portion of information about its object and opens that object when you click on it. The order of widget can be changed by dragging them below or above others. Widgets can be expanded to show its linked objects (the maximum numbers of linked objects to be shown are 6, 10, 14, 30, and 50) or collapsed. Every widget has name, icon and a view. There exist 4 different views in total: "Object view" (display linked objects' names and icons exactly how objects with "Format" of "List" display their linked objects; objects are put in tiles and each line contains 2 tiles), "Compact list view" (display each linked object's name and icon on a separate line), "List view" (display each linked object' name, icon, and short description on two lines), "Compact widget view" (do not display any linked objects). Should the number of linked objects exceeds the configured maximum number, there is a small button called "See all" which takes you to fully expanded list of linked objects inside the panel. Widgets of objects with "Format" of "Page" have only 2 kinds of views available: "Object view" and "Compact widget view". All widgets exist in two subpanels "<span class="text-bold">Pinned</span>" and "<span class="text-bold">Objects</span>", which can be expanded or collapsed. "Pinned" subpanels are for objects which you have manually pinned them. "Objects" subpanels for objects which are automatically pinned by the systems. Inside it, there is an important object named "<span class="text-bold">Bin</span>" where you can restore and delete permanently deleted objects and properties.</li>
                 <figure>
-                    <img src="/asset/anytype_settings-panel.png" alt="Anytype's Settings panel">
+                    <img src="/essence-guide/asset/anytype_settings-panel.png" alt="Anytype's Settings panel">
                     <figcaption>
                         <span class='text-bold'>Settings Panel</span> mode of <span class='text-bold'>Left panel</span>
                     </figcaption>
@@ -650,7 +650,7 @@
             </ul>
             <p class="block-paragraph">Next, the <span class="text-bold">Middle Panel</span>. This panel always has an accessible menu on the top. There are three sections.</p>
             <figure>
-                <img src="/asset/anytype_top-menu.png" alt="Anytype's Top menu">
+                <img src="/essence-guide/asset/anytype_top-menu.png" alt="Anytype's Top menu">
                 <figcaption>
                     The <span class='text-bold'>Top menu</span> of <span class='text-bold'>Middle Panel</span>.
                 </figcaption>
@@ -660,7 +660,7 @@
             <p class="block-paragraph">The right section on the right has 4 buttons: "Share" (publish the current objects onto Anytype's network - this can be used even if you are in Local network but have used Anytype network previously), "Properties" (expand or collapse the Right Panel), Menu (open advanced options). The Menu has the following buttons: "Lock object" or "Unlock object" (locked objects cannot be modified), "Add link to Object" (link other objects to this objects), "Add to Collection" (link this objects to any objects with "Format" of "List"), "Use as template" (Create a <code class="text-highlight">Template</code> object for its corresponding <code class="text-highlight">Type</code>), "Copy link" (The link copied has the same ID as the files you can file in your vault's folder "objects"), "Search in Object" (self-explanatory), "Version history" (useful when you share the work with others), "Duplicate" (create an identical object; a note of overthinker: don't worry, it won't duplicate any linked objects inside because remember that objects don't contain objects like folders, they are just linked; the new object will have different ID), "Move to Bin" (aka delete), "Print" (self-explanatory), "Export" (it has "Export format" which you can choose between "Any-Block" for being more compatible with Anytype or "Markdown" for  being more compatible with other software, "File format" which you can choose between JSON or Protobuf, Zip archive to put everything in an archive file, "Include linked objects" to include everything RECURSIVELY, "Include files" to include every piece of media you have uploaded to the space that has something to do with this object, "Include archived objects" which I have no idea.</p>
             <p class="block-paragraph">Depending on the context, this panel can be:</p>
             <figure>
-                <img src="/asset/anytype_document-panel.png" alt="Anytype's Document panel">
+                <img src="/essence-guide/asset/anytype_document-panel.png" alt="Anytype's Document panel">
                 <figcaption>
                     The <span class='text-bold'>Document Panel</span> mode of <span class='text-bold'>Middle Panel</span>.
                 </figcaption>
@@ -668,35 +668,35 @@
             <ul class="block-list list-bullet">
                 <li><span class="text-bold">Document Panel</span>: similar to any word processor. This panel shows up when you enter any object with "Format" of "Page".</li>
                 <figure>
-                    <img src="/asset/anytype_list-panel.png" alt="Anytype's List panel">
+                    <img src="/essence-guide/asset/anytype_list-panel.png" alt="Anytype's List panel">
                     <figcaption>
                         The <span class='text-bold'>List Panel</span> mode of <span class='text-bold'>Middle Panel</span>.
                     </figcaption>
                 </figure>
                 <li><span class="text-bold">List Panel</span>: similar to databases in some note-taking apps. This panel shows up when you enter any object with "Format" of "List".</li>
                 <figure>
-                    <img src="/asset/anytype_settings-panel-middle.png" alt="Anytype's Settings panel of Middle panel">
+                    <img src="/essence-guide/asset/anytype_settings-panel-middle.png" alt="Anytype's Settings panel of Middle panel">
                     <figcaption>
                         The <span class='text-bold'>Settings Panel</span> mode of <span class='text-bold'>Middle Panel</span>.
                     </figcaption>
                 </figure>
                 <li><span class="text-bold">Settings Panel</span>: where you can change the settings.</li>
                 <figure>
-                    <img src="/asset/anytype_object-panel.png" alt="Anytype's Object panel">
+                    <img src="/essence-guide/asset/anytype_object-panel.png" alt="Anytype's Object panel">
                     <figcaption>
                         The <span class='text-bold'>Object Panel</span> mode of <span class='text-bold'>Middle Panel</span>.
                     </figcaption>
                 </figure>
                 <li><span class="text-bold">Object Panel</span>: where you can see the preview of a typical object that belongs to the <code class="text-highlight">Type</code> you are going to create.</li>
                 <figure>
-                    <img src="/asset/anytype_graph-panel.png" alt="Anytype's Graph panel">
+                    <img src="/essence-guide/asset/anytype_graph-panel.png" alt="Anytype's Graph panel">
                     <figcaption>
                         The <span class='text-bold'>Graph Panel</span> mode of <span class='text-bold'>Middle Panel</span>.
                     </figcaption>
                 </figure>
                 <li><span class="text-bold">Graph Panel</span>: where you can have the "Graph" view of your entire Space or the current object. You can use your mouse wheel to zoom in or zoom out to see the graph on different scale which may effect the apperance of objects' icons and names. When you select one object, everything else is blurred and its relations will be highlighted on the graph. There are also a button "Search" and a menu to configure the graph. "Appearance" section allows you to enable information to show on the graph like "Titles", "Arrows", "Icons", "Preview", and "Cluster by Type" (objects of the same type are groups in clusters). "Show on Graph" allows you to enable entities to show on graph like "Links", "Relations", "Unlinked Objects", "Type Edges", "Local graph" (which will show only the current object and its linked objects with your chosen level of depth from 1 to 5). "Filter by Types" sections allows you to enable certain types on the graph.</li>
                 <figure>
-                    <img src="/asset/anytype_flow-panel.png" alt="Anytype's Flow panel">
+                    <img src="/essence-guide/asset/anytype_flow-panel.png" alt="Anytype's Flow panel">
                     <figcaption>
                         The <span class='text-bold'>Flow Panel</span> mode of <span class='text-bold'>Middle Panel</span>.
                     </figcaption>
@@ -707,14 +707,14 @@
             <p class="block-paragraph">Depending on the context, this panel can be:</p>
             <ul class="block-list list-bullet">
                 <figure>
-                    <img src="/asset/anytype_properties-panel-right.png" alt="Anytype's Properties panel">
+                    <img src="/essence-guide/asset/anytype_properties-panel-right.png" alt="Anytype's Properties panel">
                     <figcaption>
                         The <span class='text-bold'>Properties Panel</span> mode of <span class='text-bold'>Right Panel</span>.
                     </figcaption>
                 </figure>
                 <li><span class="text-bold">Properties Panel</span>: this panel expands or collapses when you click on the button "Properties" on the top left of the <span class="text-bold">Middle Panel</span>. It displays all properties that are put in <span class="text-bold">Properties panel</span> (configured in its Type). Properties that are put in <span class="text-bold">Hidden</span> are grouped in the section "Hidden". <span class="text-bold">Local</span> properties are grouped in the section "Local".</li>
                 <figure>
-                    <img src="/asset/anytype_type-panel.png" alt="Anytype's Type panel">
+                    <img src="/essence-guide/asset/anytype_type-panel.png" alt="Anytype's Type panel">
                     <figcaption>
                         The <span class='text-bold'>Type Panel</span> mode of <span class='text-bold'>Right Panel</span>.
                     </figcaption>
@@ -876,13 +876,13 @@
 
             <h2 class="block-heading2">Category-based objects</h2>
             <figure>
-                <img src="/asset/anytype_category-based-object-use-case.png" alt="Anytype's Category-based objects use case">
+                <img src="/essence-guide/asset/anytype_category-based-object-use-case.png" alt="Anytype's Category-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Category-based objects</span> use case. The "List" interface of the type "Category.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_category-based-object-use-case-any.png" alt="Anytype's Category-based objects use case">
+                <img src="/essence-guide/asset/anytype_category-based-object-use-case-any.png" alt="Anytype's Category-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Category-based objects</span> use case. The "List" interface of any category objects.
                 </figcaption>
@@ -890,7 +890,7 @@
             <p class="block-paragraph">This use cases is useful for objects like "Category", "Language", "Country",… Category-based objects can be linked with others while respecting the hierachy that they share. I usually use it as the database to provide options for the equivalent properties with "Class" of "Objects" (The list of types are the types of those category-based objects).</p>
             <p class="block-paragraph">They belong to a type named "Category" with "Format" of "List". This is preferred over "Format" of "Page" because I just need basic information about those objects (name and description). Chosen system properties are Name, Description, Links, Backlinks so I can navigate different related objects of a particular object at a time. There exists one important user property with class of "Checkbox" that is "Entry point". "Entry point" is how the Filter know if the categories are top-level (checked) or not (unchecked). Only top-level categories are displayed in the view when you enter the type "Category". If there is no "Entry point", every categories will be displayed and you will feel disoriented to navigate.</p>
             <figure>
-                <img src="/asset/anytype_category-based-object-use-case-template.png" alt="Anytype's Category-based objects use case">
+                <img src="/essence-guide/asset/anytype_category-based-object-use-case-template.png" alt="Anytype's Category-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Category-based objects</span> use case. The template "Category template" that all category objects share.
                 </figcaption>
@@ -899,7 +899,7 @@
 
             <h2 class="block-heading2">Dashboard-based objects</h2>
             <figure>
-                <img src="/asset/anytype_dashboard-based-object-use-case.png" alt="Anytype's Dashboard-based objects use case">
+                <img src="/essence-guide/asset/anytype_dashboard-based-object-use-case.png" alt="Anytype's Dashboard-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Dashboard-based objects</span> use case. Pinned dashboard objects in the widget panel of the Left Panel.
                 </figcaption>
@@ -907,14 +907,14 @@
             <p class="block-paragraph">This use cases is useful for objects like "Dashboard", "Command center", "Navigation panel",… Dashboard-based objects are all about presentation and navigation. I usually pin those objects for the widget section of the Left Panel so that I can always navigate in different locations.</p>
             <p class="block-paragraph">There are two approaches for this:</p>
             <figure>
-                <img src="/asset/anytype_dashboard-based-object-use-case-page-dashboard.png" alt="Anytype's Dashboard-based objects use case">
+                <img src="/essence-guide/asset/anytype_dashboard-based-object-use-case-page-dashboard.png" alt="Anytype's Dashboard-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Dashboard-based objects</span> use case. The interface of <span class='text-bold'>"Page" dashboard</span>.
                 </figcaption>
             </figure>
             <p class="block-paragraph">"Page" dashboard is useful for overview and customize on a document layout. You can use the system type "Page" for "Page" dashboard or create a new user type with "Format" of Page" for them.</p>
             <figure>
-                <img src="/asset/anytype_dashboard-based-object-use-case-collection-dashboard.png" alt="Anytype's Dashboard-based objects use case">
+                <img src="/essence-guide/asset/anytype_dashboard-based-object-use-case-collection-dashboard.png" alt="Anytype's Dashboard-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Dashboard-based objects</span> use case. The interface of <span class='text-bold'>"Collection" dashboard</span>.
                 </figcaption>
@@ -933,14 +933,14 @@
             </ul>
             <p class="block-paragraph">With that said, let's get going.</p>
             <figure>
-                <img src="/asset/anytype_calendar-based-object-use-case-dashboard.png" alt="Anytype's Calendar-based objects use case">
+                <img src="/essence-guide/asset/anytype_calendar-based-object-use-case-dashboard.png" alt="Anytype's Calendar-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Calendar-based objects</span> use case. The interface of the dashboard <span class='text-bold'>"Calendar"</span>.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Calendar</span> consists of <span class="text-bold">Occurrence</span> which are instances of <span class="text-bold">Schedule</span> that represent group of related occurrences you want to track in the calendar.</p>
             <figure>
-                <img src="/asset/anytype_calendar-based-object-use-case-occurrence.png" alt="Anytype's Calendar-based objects use case">
+                <img src="/essence-guide/asset/anytype_calendar-based-object-use-case-occurrence.png" alt="Anytype's Calendar-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Calendar-based objects</span> use case. The interface of the type <span class='text-bold'>"Occurrence"</span>.
                 </figcaption>
@@ -1016,14 +1016,14 @@
             </ul>
             <p class="block-paragraph">Every occurrence has a checkbox but the meaning of the checkbox depends on its schedule type. Read the information above to find out more.</p>
             <figure>
-                <img src="/asset/anytype_calendar-based-object-use-case-schedule.png" alt="Anytype's Calendar-based objects use case">
+                <img src="/essence-guide/asset/anytype_calendar-based-object-use-case-schedule.png" alt="Anytype's Calendar-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Calendar-based objects</span> use case. The interface of the type <span class='text-bold'>"Schedule"</span>.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Schedule</span> is a type with "Format" of "Page" so you can write out everything you want to track or are tracking. It doesn't need a template. It also doesn't need any additional user properties.</p>
             <figure>
-                <img src="/asset/anytype_calendar-based-object-use-case-calendar.png" alt="Anytype's Calendar-based objects use case">
+                <img src="/essence-guide/asset/anytype_calendar-based-object-use-case-calendar.png" alt="Anytype's Calendar-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Calendar-based objects</span> use case. The interface of the query <span class='text-bold'>"Calendar"</span>.
                 </figcaption>
@@ -1034,7 +1034,7 @@
             <h2 class="block-heading2">Thought-based objects</h2>
             <p class="block-paragraph">This use cases is useful for objects like "Idea", "Note", "Plan",… This is the most basic and universal use case of note-taking apps.</p>
             <figure>
-                <img src="/asset/anytype_thought-based-object-use-case.png" alt="Anytype's Thought-based objects use case">
+                <img src="/essence-guide/asset/anytype_thought-based-object-use-case.png" alt="Anytype's Thought-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Thought-based objects</span> use case. The interface of the type <span class='text-bold'>"Thought"</span>.
                 </figcaption>
@@ -1046,7 +1046,7 @@
             <p class="block-paragraph">Honestly, for this particular kind, I can only show you the method, not a complete use case nor demonstration. Let's get straight into the core idea of "projects": tracking tasks. If it is this easy, you just need to create a type for tasks then add a property with "Class" of "Object" to differentiate tasks accross different projects.</p>
             <p class="block-paragraph">However, big projects are not just about tracking tasks. They are also about tracking information. What kinds of information? Well, anything. They can be the information about team members who are working on this project; objective/goals that the project must attain; products that this project is working on; established practices like code of conduct, project policy,…</p>
             <figure>
-                <img src="/asset/anytype_project-based-object-use-case.png" alt="Anytype's Project-based objects use case">
+                <img src="/essence-guide/asset/anytype_project-based-object-use-case.png" alt="Anytype's Project-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Project-based objects</span> use case. The interface of the type <span class='text-bold'>"Project"</span>.
                 </figcaption>
@@ -1056,7 +1056,7 @@
             <h2 class="block-heading2">Knowledge-based objects</h2>
             <p class="block-paragraph">This use cases is useful for "Knowledge" objects which represent anything you want to learn. Surprisingly, Knowledge-based objects and Thought-based objects share huge similarity.</p>
             <figure>
-                <img src="/asset/anytype_knowledge-based-object-use-case.png" alt="Anytype's Knowledge-based objects use case">
+                <img src="/essence-guide/asset/anytype_knowledge-based-object-use-case.png" alt="Anytype's Knowledge-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Knowledge-based objects</span> use case. The interface of the type <span class='text-bold'>"Knowledge"</span>.
                 </figcaption>
@@ -1067,20 +1067,20 @@
             <p class="block-paragraph">This use cases is useful for "Entity" objects like "People", "Celebrity", "Friends",… I use it for managing everyone I know and every relationship I have in my life.</p>
             <p class="block-paragraph">My approach is as the following.</p>
             <figure>
-                <img src="/asset/anytype_entity-based-object-use-case-people.png" alt="Anytype's Entity-based objects use case">
+                <img src="/essence-guide/asset/anytype_entity-based-object-use-case-people.png" alt="Anytype's Entity-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Entity-based objects</span> use case. The interface of the type <span class='text-bold'>"People"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_entity-based-object-use-case-people-object.png" alt="Anytype's Entity-based objects use case">
+                <img src="/essence-guide/asset/anytype_entity-based-object-use-case-people-object.png" alt="Anytype's Entity-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Entity-based objects</span> use case. The interface of a particular <span class='text-bold'>"People"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">People</span> is a type with "Format" of "List". Why not "Format" of "Page"? Because people in real life can form different groups and groups can form other bigger groups. Those groups may have separate information and act differently. This is why I prefer the term "Entity" sometimes. For templates, "People" objects share a template that is configured to be identical the type "People" so that it shows a "Grid" view of its linked objects (the people or groups who belong to that group). For properties, the type "People" has a property called "Compositionality" with "Class" of "Select" which tells if the object is an individual or a group. There's a unique "People" object called "Me". This is the object I use to represent me as it is very convenient for Info and Connnection.</p>
             <figure>
-                <img src="/asset/anytype_entity-based-object-use-case-info.png" alt="Anytype's Entity-based objects use case">
+                <img src="/essence-guide/asset/anytype_entity-based-object-use-case-info.png" alt="Anytype's Entity-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Entity-based objects</span> use case. The interface of the type <span class='text-bold'>"Info"</span>.
                 </figcaption>
@@ -1099,7 +1099,7 @@
             </ul>
             <p class="block-paragraph">Why not storing the information in properties of People? Well, if you do that, your best "class" would be text, a single-line piece of text, which is not enough for unstructured information. For example, I can store the height of someone in property but I can't not store the context of that information. How does that person have that height? Accidents? Injury? Surgery? The context requires document interface should you need it. Besides, Anytype gets very laggy when you enable many properties as the same time.</p>
             <figure>
-                <img src="/asset/anytype_entity-based-object-use-case-connection.png" alt="Anytype's Entity-based objects use case">
+                <img src="/essence-guide/asset/anytype_entity-based-object-use-case-connection.png" alt="Anytype's Entity-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Entity-based objects</span> use case. The interface of the type <span class='text-bold'>"Connection"</span>.
                 </figcaption>
@@ -1192,28 +1192,28 @@
             <h2 class="block-heading2">Organization-based objects</h2>
             <p class="block-paragraph">This use cases is useful for objects like "Companies", "Brands", "Organizations",… I use it as database for Goods-based objects.</p>
             <figure>
-                <img src="/asset/anytype_organization-based-object-use-case-organization.png" alt="Anytype's Organization-based objects use case">
+                <img src="/essence-guide/asset/anytype_organization-based-object-use-case-organization.png" alt="Anytype's Organization-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Organization-based objects</span> use case. The interface of the type <span class='text-bold'>"Company"</span>.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Company</span> is a type with "Format" of "Page". For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they have the following trivial properties. "Founded when" with "Class" of "Date" is when the company is founded. "Country" with "Class" of "Object" (Country) is a list of countries that the company operates in. "Note" with "Class" of "Text" describes additional information about the company. "Reference" with "Class" of "Object" (Bookmark) is list of links related to this company like websites, articles, research papers.</p>
             <figure>
-                <img src="/asset/anytype_organization-based-object-use-case-company-relation.png" alt="Anytype's Organization-based objects use case">
+                <img src="/essence-guide/asset/anytype_organization-based-object-use-case-company-relation.png" alt="Anytype's Organization-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Organization-based objects</span> use case. The interface of the type <span class='text-bold'>"Company relation"</span>.
                 </figcaption>
             </figure>
             <p class="block-paragraph">Company give rise to <span class="text-bold">Company relations</span>. For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they have two important properties "Source company" (the company whom this relation's perspective is from) and "Target company" (the company whom this relation's perspective is to). They have "Class" of "Object" (Company).</p>
             <figure>
-                <img src="/asset/anytype_organization-based-object-use-case-brand.png" alt="Anytype's Organization-based objects use case">
+                <img src="/essence-guide/asset/anytype_organization-based-object-use-case-brand.png" alt="Anytype's Organization-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Organization-based objects</span> use case. The interface of the type <span class='text-bold'>"Brand"</span>.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Brand</span> is a type with "Format" of "Page". For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they have the following trivial properties. "Founded when" with "Class" of "Date" is when the brand is founded. "Country" with "Class" of "Object" (Country) is a list of countries that the brand operates in. "Note" with "Class" of "Text" describes additional information about the brand. "Reference" with "Class" of "Object" (Bookmark) is list of links related to this brand like websites, articles, research papers.</p>
             <figure>
-                <img src="/asset/anytype_organization-based-object-use-case-brand-relation.png" alt="Anytype's Organization-based objects use case">
+                <img src="/essence-guide/asset/anytype_organization-based-object-use-case-brand-relation.png" alt="Anytype's Organization-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Organization-based objects</span> use case. The interface of the type <span class='text-bold'>"Brand relation"</span>.
                 </figcaption>
@@ -1223,26 +1223,26 @@
             <h2 class="block-heading2">Goods-based objects</h2>
             <p class="block-paragraph">This use cases is useful for objects like "Products", "Items", "Services",… I use it to learn about every products and services in my life.</p>
             <figure>
-                <img src="/asset/anytype_goods-based-object-use-case-goods-type.png" alt="Anytype's Goods-based objects use case">
+                <img src="/essence-guide/asset/anytype_goods-based-object-use-case-goods-type.png" alt="Anytype's Goods-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Goods-based objects</span> use case. The interface of the type <span class='text-bold'>"Goods"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_goods-based-object-use-case-goods-object.png" alt="Anytype's Goods-based objects use case">
+                <img src="/essence-guide/asset/anytype_goods-based-object-use-case-goods-object.png" alt="Anytype's Goods-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Goods-based objects</span> use case. The interface of a particular <span class='text-bold'>"Goods"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Goods</span> is a type with "Format" of "List". For templates, they share a template that has a "Grid" view of all linked objects inside. For properties, they have the following trivial properties. "Category" with "Class" of "Object" (Category) describes all associated categories of that goods object. "Brand" with "Class" of "Object" (Brand) describes all associated brands of that goods object. "Goods line" with "Class" of "Text" describes the line this goods belongs to. "Goods version" with "Class" of "Text" describes the version of this goods. "Note" with "Class" of "Text" describes additional information about the goods. "Reference" with "Class" of "Object" (Bookmark) is list of links related to this goods like websites, articles, research papers. Depending on the nature of the goods, I create a particular template, particular list of local properties, and a particular view in the interface of the type "Goods".</p>
             <figure>
-                <img src="/asset/anytype_goods-based-object-use-case-goods-unit-type.png" alt="Anytype's Goods-based objects use case">
+                <img src="/essence-guide/asset/anytype_goods-based-object-use-case-goods-unit-type.png" alt="Anytype's Goods-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Goods-based objects</span> use case. The interface of the type <span class='text-bold'>"Goods unit"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_goods-based-object-use-case-goods-unit-object.png" alt="Anytype's Goods-based objects use case">
+                <img src="/essence-guide/asset/anytype_goods-based-object-use-case-goods-unit-object.png" alt="Anytype's Goods-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Goods-based objects</span> use case. The interface of a particular <span class='text-bold'>"Goods unit"</span> object.
                 </figcaption>
@@ -1250,26 +1250,26 @@
             <p class="block-paragraph">Goods contain smaller units called Goods unit, which contain something at different amount. For example, tomatoes contains different nutritions like protein, lipid, carb, vitamins… at different amounts.</p>
             <p class="block-paragraph"><span class="text-bold">Goods unit</span> is a type with "Format" of "Page". For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they have the following important properties. "Component" with "Class" of "Object" (Component) describe what component is this goods unit. If the component is blank, this goods unit only provide information about the product, not about the product's contents. "Specification volumne" with "Class" of "Text" describes the size or volume of the sample of the goods. "Specification min" with "Class" of "Text" describes the minimum amount of the component that is publicly disclosed. "Specification max" with "Class" of "Text" describes the maximum amount of the component that is publicly disclosed. "Specification unit" with "Class" of "Text" describes the unit of the specification. "Specification standard" with "Class" of "Text" describes the standard the specification is based on..</p>
             <figure>
-                <img src="/asset/anytype_goods-based-object-use-case-inventory-type.png" alt="Anytype's Goods-based objects use case">
+                <img src="/essence-guide/asset/anytype_goods-based-object-use-case-inventory-type.png" alt="Anytype's Goods-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Goods-based objects</span> use case. The interface of the type <span class='text-bold'>"Inventory"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_goods-based-object-use-case-inventory-object.png" alt="Anytype's Goods-based objects use case">
+                <img src="/essence-guide/asset/anytype_goods-based-object-use-case-inventory-object.png" alt="Anytype's Goods-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Goods-based objects</span> use case. The interface of a particular <span class='text-bold'>"Inventory"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Inventory</span> is a type with "Format" of "Page". For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they have the following important properties. "Goods" with "Class" of "Object" (Goods) describes what goods this inventory contains. "Inventory quantity" with "Class" of "Number" describes how many or much of goods this inventory has. "Inventory unit" with "Class" of "Text" describes what unit is the goods measured in. "Date target" with "Class" of "Date" describes expiration date for consumable goods or warranty date for sustainable goods. "Activity unit" with "Class" of "Object" (Activity, Activity unit) describes the activity or activity unit this inventory belongs to.</p>
             <figure>
-                <img src="/asset/anytype_goods-based-object-use-case-component-type.png" alt="Anytype's Goods-based objects use case">
+                <img src="/essence-guide/asset/anytype_goods-based-object-use-case-component-type.png" alt="Anytype's Goods-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Goods-based objects</span> use case. The interface of the type <span class='text-bold'>"Component"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_goods-based-object-use-case-component-object.png" alt="Anytype's Goods-based objects use case">
+                <img src="/essence-guide/asset/anytype_goods-based-object-use-case-component-object.png" alt="Anytype's Goods-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Goods-based objects</span> use case. The interface of a particular <span class='text-bold'>"Component"</span> object.
                 </figcaption>
@@ -1277,13 +1277,13 @@
             <p class="block-paragraph">Goods units give rise to Components (the nutritions themselves without the quantities).</p>
             <p class="block-paragraph"><span class="text-bold">Component</span> is a type with "Format" of "Page". For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they has an important property with "Class" of "Select" called "Component kind". It has 4 options. "Ingredients" describes consumable part within the product, typically used up during use. For example, oils in cosmetics, spices in food, surfactants in detergent,… "Material" describes durable substance that forms the product’s structure or body. For example, cotton in clothes, wood in furniture, leather in shoes,… "Process" describes consumable part within the service, typically used up during use. For example, workout sessions in gym, course classes in education,… "Infrastructure" describes durable structures, frameworks, and tools that make the service possible. For example, library access, digital account, learning platform,…</p>
             <figure>
-                <img src="/asset/anytype_goods-based-object-use-case-effect-type.png" alt="Anytype's Goods-based objects use case">
+                <img src="/essence-guide/asset/anytype_goods-based-object-use-case-effect-type.png" alt="Anytype's Goods-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Goods-based objects</span> use case. The interface of the type <span class='text-bold'>"Effect"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_goods-based-object-use-case-effect-object.png" alt="Anytype's Goods-based objects use case">
+                <img src="/essence-guide/asset/anytype_goods-based-object-use-case-effect-object.png" alt="Anytype's Goods-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Goods-based objects</span> use case. The interface of a particular <span class='text-bold'>"Effect"</span> object.
                 </figcaption>
@@ -1291,13 +1291,13 @@
             <p class="block-paragraph">Components themselves give rise to Effects which are what happen when you use or consume the components. Say, you eat tomatoes which have "vitamins" which again have different effects on your body.</p>
             <p class="block-paragraph"><span class="text-bold">Effect</span> is a type with "Format" of "Page". For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they has the following important properties. "Component" with "Class" of "Object" (Component) describes the component(s) that can lead to this effect. "Condition" with "Class" of "Object" (Condition) describes the condition(s) that this effect can treat. "Specification min" with "Class" of "Text" describes the minimum quantity of the component to make this effect. "Specification max" with "Class" of "Text" describes the maximum quantity of the component to make this effect.</p>
             <figure>
-                <img src="/asset/anytype_goods-based-object-use-case-condition-type.png" alt="Anytype's Goods-based objects use case">
+                <img src="/essence-guide/asset/anytype_goods-based-object-use-case-condition-type.png" alt="Anytype's Goods-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Goods-based objects</span> use case. The interface of the type <span class='text-bold'>"Condition"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_goods-based-object-use-case-condition-object.png" alt="Anytype's Goods-based objects use case">
+                <img src="/essence-guide/asset/anytype_goods-based-object-use-case-condition-object.png" alt="Anytype's Goods-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Goods-based objects</span> use case. The interface of a particular <span class='text-bold'>"Condition"</span> object.
                 </figcaption>
@@ -1305,13 +1305,13 @@
             <p class="block-paragraph">Effects give rise to Conditions which are the issues you are having with your body or your other goods. You may consume vitamins in order to treat your issues (conditions) like "Scurvy".</p>
             <p class="block-paragraph"><span class="text-bold">Condition</span> is a type with "Format" of "Page". For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they has the following important properties. "Symptom" with "Class" of "Object" (Symptom) describes the symptom(s) that this condition can have. "Cause" with "Class" of "Object" (Cause) describes the cause(s) that lead to this condition.</p>
             <figure>
-                <img src="/asset/anytype_goods-based-object-use-case-symptom-type.png" alt="Anytype's Goods-based objects use case">
+                <img src="/essence-guide/asset/anytype_goods-based-object-use-case-symptom-type.png" alt="Anytype's Goods-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Goods-based objects</span> use case. The interface of the type <span class='text-bold'>"Symptom"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_goods-based-object-use-case-symptom-object.png" alt="Anytype's Goods-based objects use case">
+                <img src="/essence-guide/asset/anytype_goods-based-object-use-case-symptom-object.png" alt="Anytype's Goods-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Goods-based objects</span> use case. The interface of a particular <span class='text-bold'>"Symptom"</span> object.
                 </figcaption>
@@ -1319,13 +1319,13 @@
             <p class="block-paragraph">Conditions are also linked with Symptoms, the actual outward signs. Continue the example, "Scurvy" has symptoms like "Anemia"; swollen, bleeding gums; loosened teeth; rough, scaly skin; swollen legs.</p>
             <p class="block-paragraph"><span class="text-bold">Symptom</span> is a type with "Format" of "Page". For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they don't have any important properties to list here.</p>
             <figure>
-                <img src="/asset/anytype_goods-based-object-use-case-cause-type.png" alt="Anytype's Goods-based objects use case">
+                <img src="/essence-guide/asset/anytype_goods-based-object-use-case-cause-type.png" alt="Anytype's Goods-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Goods-based objects</span> use case. The interface of the type <span class='text-bold'>"Cause"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_goods-based-object-use-case-cause-object.png" alt="Anytype's Goods-based objects use case">
+                <img src="/essence-guide/asset/anytype_goods-based-object-use-case-cause-object.png" alt="Anytype's Goods-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Goods-based objects</span> use case. The interface of a particular <span class='text-bold'>"Cause"</span> object.
                 </figcaption>
@@ -1333,13 +1333,13 @@
             <p class="block-paragraph">Conditions are also linked with Causes, which lead to the current conditions. Continue the example, "Scurvy" happens due to serious "vitamin C deficiency" (conditions).</p>
             <p class="block-paragraph"><span class="text-bold">Cause</span> is a type with "Format" of "Page". For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they don't have any important properties to here.</p>
             <figure>
-                <img src="/asset/anytype_goods-based-object-use-case-metric-type.png" alt="Anytype's Goods-based objects use case">
+                <img src="/essence-guide/asset/anytype_goods-based-object-use-case-metric-type.png" alt="Anytype's Goods-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Goods-based objects</span> use case. The interface of the type <span class='text-bold'>"Metric"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_goods-based-object-use-case-metric-object.png" alt="Anytype's Goods-based objects use case">
+                <img src="/essence-guide/asset/anytype_goods-based-object-use-case-metric-object.png" alt="Anytype's Goods-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Goods-based objects</span> use case. The interface of a particular <span class='text-bold'>"Metric"</span> object.
                 </figcaption>
@@ -1350,7 +1350,7 @@
             <h2 class="block-heading2">Evaluation-based objects</h2>
             <p class="block-paragraph">"Why the hell you would need objects to represent evaluation? Shouldn't we just include a Property with "Class" of "Number" of "Select" to rate everything?" Well yes, this is quite a nuisance. In real life nowadays, everything has too many segments that have too many different products and services and target different customer groups. It's nearly impossible to frame the thing in a single word like "good" or "bad" without relying on the "Halo effect" (It happens when a positive impression of one product, trait, or experience with a brand carries over, leading people to assume that other products or aspects of that brand are also good). The most unbiased, objective way to judge is to evaluate everything only and ignore the maker completely. However, nobody has that enormous amount of time in the world so we will have to make assumptions. This is why we need "Evaluation". It only describes a segment of the thing based on certain criteria. These criteria are left to each individual to find out.</p>
             <figure>
-                <img src="/asset/anytype_evaluation-based-object-use-case.png" alt="Anytype's Evaluation-based objects use case">
+                <img src="/essence-guide/asset/anytype_evaluation-based-object-use-case.png" alt="Anytype's Evaluation-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Evaluation-based objects</span> use case. The interface of the type <span class='text-bold'>"Evaluation"</span>.
                 </figcaption>
@@ -1360,14 +1360,14 @@
             <h2 class="block-heading2">Routine-based objects</h2>
             <p class="block-paragraph">This use cases is useful for daily activities you have to do like "Cleaning", "Hygiene", "Exercise", "Eating", "Sleeping", "Shopping",… I use it to track every things I do in my routine.</p>
             <figure>
-                <img src="/asset/anytype_routine-based-object-use-case-routine-collection.png" alt="Anytype's Routine-based objects use case">
+                <img src="/essence-guide/asset/anytype_routine-based-object-use-case-routine-collection.png" alt="Anytype's Routine-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Routine-based objects</span> use case. The interface of the "Collection" object <span class='text-bold'>"Routine"</span>.
                 </figcaption>
             </figure>
             <p class="block-paragraph">Here's my approach. Routine deals mainly with Activities which are things you on a daily basis. Activity is the combination of the Activity unit which means different facets of information you need to know about the activity. They may differ based on nature of the activity. This gives rise to Catalogs which provide the information for the activity unit. Catalogs exist separately from activities because for every activity, you must track certain profiles, use certain products, have certain certain knowledge, all of which may overlap if you put them inside activities.</p>
             <figure>
-                <img src="/asset/anytype_routine-based-object-use-case-activity-type.png" alt="Anytype's Routine-based objects use case">
+                <img src="/essence-guide/asset/anytype_routine-based-object-use-case-activity-type.png" alt="Anytype's Routine-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Routine-based objects</span> use case. The interface of the type <span class='text-bold'>"Activity"</span>.
                 </figcaption>
@@ -1426,13 +1426,13 @@
                 <li>To be evaluated</li>
             </ul>
             <figure>
-                <img src="/asset/anytype_routine-based-object-use-case-activity-object.png" alt="Anytype's Routine-based objects use case">
+                <img src="/essence-guide/asset/anytype_routine-based-object-use-case-activity-object.png" alt="Anytype's Routine-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Routine-based objects</span> use case. The interface of a particular <span class='text-bold'>"Activity"</span> object.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_routine-based-object-use-case-activity-unit-object.png" alt="Anytype's Routine-based objects use case">
+                <img src="/essence-guide/asset/anytype_routine-based-object-use-case-activity-unit-object.png" alt="Anytype's Routine-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Routine-based objects</span> use case. The interface of a particular <span class='text-bold'>"Activity unit"</span> object.
                 </figcaption>
@@ -1490,7 +1490,7 @@
                 </li>
             </ul>
             <figure>
-                <img src="/asset/anytype_routine-based-object-use-case-catalog-collection.png" alt="Anytype's Routine-based objects use case">
+                <img src="/essence-guide/asset/anytype_routine-based-object-use-case-catalog-collection.png" alt="Anytype's Routine-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Routine-based objects</span> use case. The interface of the "Collection" object <span class='text-bold'>"Catalog"</span>.
                 </figcaption>
@@ -1501,20 +1501,20 @@
             <h2 class="block-heading2">Interest-based objects</h2>
             <p class="block-paragraph">This use cases is useful for hobbies like "Music", "Movies", "Books", "Games", "Sports",… I use it to track every activities I want to do for my interest.</p>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-interest-collection.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-interest-collection.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of the "Collection" object <span class='text-bold'>"Interest"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-activity-type.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-activity-type.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of the type <span class='text-bold'>"Activity unit"</span>.
                 </figcaption>
             </figure>
             <p class="block-paragraph">While both Routine-based objects and Interest-based objects share the same core ideas of Activity, Activity Unit and Catalogs, Interest-based objects have something unique enough that I decide to split them. It is Content in Catalogs. This is reflected in real life as when you love something, you consume content about that thing.</p>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-catalogs-collection.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-catalogs-collection.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of the "Collection" object <span class='text-bold'>"Catalogs"</span>.
                 </figcaption>
@@ -1528,182 +1528,182 @@
             <p class="block-paragraph">The creators behind these works are Contributors. They hold multiple Contributor roles such as director, writer, or performer. These roles are realized through Contributions: a filmmaker contributes directing to the documentary, while a critic contributes commentary to the post-screening discussion. Each Contribution ties a Contributor, their role, and the specific Content where their effort is recognized.</p>
             <p class="block-paragraph">All these Interest sources such as Contents, Practices, Festivals, Channels, and Platforms exist because of Contributors, their Contributor roles, and their Contributions. They and Content sources are considered Interest affiliates. Each of these elements may receive Interest evaluations such as viewer ratings, critic reviews, or community votes, as well as Interest achievements such as film awards, bestseller lists, or official recognitions that validate their success and impact.</p>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-content-type.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-content-type.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of the type <span class='text-bold'>"Content"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-content-object.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-content-object.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of a particular <span class='text-bold'>"Content"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Content</span> is a type with "Format" of "List". It has different "Grid" views based on the interest activity. For templates, they all share a template of "Grid view" so that it can show all linked objects for all of the current object. For properties, they all have the following important properties. "Content version" with "Class" of "Text" describes what version this content is. "Content version" with "Class" of "Number" shows the position of this content relative to its parent content. describes what version this content is. "Content category" with "Class" of "Object" (Content category) describes which content category this content belongs to. "Content genre" with "Class" of "Object" (Content genre) describes which content genre this content belongs to. "Content theme" with "Class" of "Object" (Content theme) describes which content theme this content belongs to. "Content attitude" with "Class" of "Select" describes how this content is felt: Enjoy, Fond, Hate, Neutral, Wait, or Other. "Content status" with "Class" of "Select" describes the status of this content: Archived (stored for reference, not actively promoted or updated), Available (accessible immediately for viewing, streaming, or download), Exclusive (limited to specific platforms, regions, or special audiences), Flagged (reported or marked for potential issues or violations), Pending (awaiting approval, review, or final publishing decision), Production (being created, edited, or still under development), Removed (taken down and no longer accessible to users), Restricted (requires permission, subscription, or special conditions for access), Scheduled (finished and set to become available at a future date). "Language" with "Class" of "Object" (Language) describes which language this content has.</p>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-content-category-type.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-content-category-type.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of the type <span class='text-bold'>"Content category"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-content-category-object.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-content-category-object.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of a particular <span class='text-bold'>"Content category"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Content category</span> is a type with "Format" of "List". It has different "Grid" views based on the interest activity. For templates, they all share a template of "Grid view" so that it can show all linked objects for all of the current object. For properties, they have the following important properties. "Entry point" with "Class" of "Number" or "Checkbox" is how the Filter know if the categories are top-level (1 of checked) or not (0 or unchecked). Only top-level categories are displayed in the view when you enter the type "Content category". "Activity unit" with "Class" of "Object" (Activity, Activity unit) describes which Activity or Activity unit this content category belongs to.</p>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-content-genre-type.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-content-genre-type.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of the type <span class='text-bold'>"Content genre"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-content-genre-object.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-content-genre-object.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of a particular <span class='text-bold'>"Content genre"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Content genre</span> is a type with "Format" of "List". It has different "Grid" views based on the interest activity. For templates, they all share a template of "Grid view" so that it can show all linked objects for all of the current object. For properties, they have the following important properties. "Entry point" with "Class" of "Number" or "Checkbox" is how the Filter know if the genres are top-level (1 of checked) or not (0 or unchecked). Only top-level genres are displayed in the view when you enter the type "Content genre". "Activity unit" with "Class" of "Object" (Activity, Activity unit) describes which Activity or Activity unit this content genre belongs to.</p>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-content-theme-type.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-content-theme-type.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of the type <span class='text-bold'>"Content theme"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-content-theme-object.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-content-theme-object.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of a particular <span class='text-bold'>"Content theme"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Content theme</span> is a type with "Format" of "List". It has different "Grid" views based on the interest activity. For templates, they all share a template of "Grid view" so that it can show all linked objects for all of the current object. For properties, they have the following important properties. "Entry point" with "Class" of "Number" or "Checkbox" is how the Filter know if the themes are top-level (1 of checked) or not (0 or unchecked). Only top-level themes are displayed in the view when you enter the type "Content theme". "Activity unit" with "Class" of "Object" (Activity, Activity unit) describes which Activity or Activity unit this content theme belongs to.</p>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-content-source-type.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-content-source-type.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of the type <span class='text-bold'>"Content source"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-content-source-object.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-content-source-object.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of a particular <span class='text-bold'>"Content source"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Content source</span> is a type with "Format" of "Page". For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they have the following important properties. "Content" with "Class" of "Object" (Content) describes the content this content source is about. "Channel" with "Class" of "Object" (Channel) describes which channel this content source belongs to. "Activity unit" with "Class" of "Object" (Activity, Activity unit) describes which Activity or Activity unit this content source belongs to.</p>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-asset-type.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-asset-type.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of the type <span class='text-bold'>"Asset"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-asset-object.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-asset-object.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of a particular <span class='text-bold'>"Asset"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Asset</span> is a type with "Format" of "Page". For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they have the following important properties. "Interest source" with "Class" of "Object" (Interest source) describes interest source this asset belongs to. "Asset type" with "Class" of "Multi-select" describes what type this asset belongs to: Audio, Bookmark, Collection, File, Image, Page, Video, Other. "Activity unit" with "Class" of "Object" (Activity, Activity unit) describes which Activity or Activity unit this asset belongs to.</p>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-practice-type.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-practice-type.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of the type <span class='text-bold'>"Practice"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-practice-object.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-practice-object.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of a particular <span class='text-bold'>"Practice"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Practice</span> is a type with "Format" of "Page". For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they have the following important properties. "Activity unit" with "Class" of "Object" (Activity, Activity unit) describes which Activity or Activity unit this practice belongs to. "Duration" with "Class" of "Number" describes how long the practice is. "Duration unit" with "Class" of "Text" describes the unit of the practice's duration. "Frequency" with "Class" of "Number" describes how frequent the practice is. "Frequency unit" describes the unit of the practice's frequency.</p>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-festival-type.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-festival-type.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of the type <span class='text-bold'>"Festival"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-festival-object.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-festival-object.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of a particular <span class='text-bold'>"Festival"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Festival</span> is a type with "Format" of "Page". For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they have the following important properties. "Activity unit" with "Class" of "Object" (Activity, Activity unit) describes which Activity or Activity unit this festival belongs to. "Event when" with "Class" of "Date (include time)" describes when the festival is. "Duration" with "Class" of "Number" describes how long the festival is. "Duration unit" with "Class" of "Text" describes the unit of the festival's duration. "Format" with "Class" of "Multi-select" describes how to approach or attend this festival: Offline, Online, or both. "Location" with "Class" of "Object" (Location, Platform) describes the place (if offline) or the platform (if online) to attend this event at.</p>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-channel-type.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-channel-type.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of the type <span class='text-bold'>"Channel"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-channel-object.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-channel-object.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of a particular <span class='text-bold'>"Channel"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Channel</span> is a type with "Format" of "Page". For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they have the following important properties. "Activity unit" with "Class" of "Object" (Activity, Activity unit) describes which Activity or Activity unit this channel belongs to. "Format" with "Class" of "Multi-select" describes how to approach or attend this festival: Offline, Online, or both. "Location" with "Class" of "Object" (Location, Platform) describes the place (if offline) or the platform (if online) to attend this event at. "Channel status" with "Class" of "Select" describes the relationship of the consumer to this channel: Blocked (user has blocked the channel, content hidden), Intact (has not subscribed at any point), Subscribed (actively following, receives updates), Unsubscribed (previously subscribed but canceled). "Channel lifecycle" with "Class" of "Select" describes how the channel is operating: Active (publishing content regularly), Inactive (exists but hasn't published in a long time), Suspended (temporarily disabled for policy violations), Terminated (permanently removed by owner or platform). "Start when" with "Class" of "Date" describes when this channel was created. "End when" with "Class" of "Date" describes when this channel was cancelled. "Duration" with "Class" of "Number" describes how old the channel is. "Duration unit" with "Class" of "Text" describes the unit of the channel's age.</p>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-platform-type.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-platform-type.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of the type <span class='text-bold'>"Platform"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-platform-object.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-platform-object.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of a particular <span class='text-bold'>"Platform"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Platform</span> is a type with "Format" of "Page". For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they have the following important properties. "Activity unit" with "Class" of "Object" (Activity, Activity unit) describes which Activity or Activity unit this platform belongs to. "Format" with "Class" of "Multi-select" describes how to approach or attend this festival: Offline, Online, or both. "Location" with "Class" of "Object" (Location, Platform) describes the place (if offline) or the platform (if online) to attend this event at. "Platform attitude" with "Class" of "Select" describes the attitude of user towards this platform: Avoid (actively chooses not to use the platform, often due to dislike, distrust, or negative past experience), Casual (uses the platform irregularly or only when convenient, without strong commitment), Loyal (consistently uses and supports the platform over alternatives, showing long-term trust and preference), Primary (considers the platform as their main or go-to choice for that type of content). "Platform lifecycle" with "Class" of "Select" describes how the channel is operating: Active (fully running, users can access all features normally), Archived (accessible but restricted to viewing; no uploads/changes allowed), Beta (in testing phase, limited availability, not fully stable), Closed (permanently shut down, no longer operating), Degraded (platform is up but some features/services aren’t working properly), Maintenance (temporarily offline or limited for updates or fixes), Suspended (temporarily disabled due to policy, legal, or financial issues), Takendown (removed by authority decision, violation, or forced shutdown). "Start when" with "Class" of "Date" describes when this platform was created. "End when" with "Class" of "Date" describes when this platform was cancelled. "Duration" with "Class" of "Number" describes how old the platform is. "Duration unit" with "Class" of "Text" describes the unit of the platform's age.</p>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-contributor-type.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-contributor-type.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of the type <span class='text-bold'>"Contributor"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-contributor-object.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-contributor-object.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of a particular <span class='text-bold'>"Contributor"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Contributor</span> is a type with "Format" of "List". It has different "Grid" views based on the interest activity. For templates, they all share a template of "Grid view" so that it can show all linked objects for all of the current object. For properties, they have the following important properties. "Activity unit" with "Class" of "Object" (Activity, Activity unit) describes which Activity or Activity unit this contributor belongs to. "Compositionality" with "Class" of "Select" tells if the object is an individual or a group (collective). "People" with "Class" of "Object" (People) describes the real identity of this contributor. "Contributor status" with "Class" of "Select" describes what status the contributor is: Active (currently creating and engaging with audience through consistent, new content), Deceased (has passed away; content remains as lasting digital legacy), Inactive (absent from content creation without prior notice or explanation given), On break (temporarily paused content creation, publicly shared break with fans), Retired (permanently stepped away from content creation, no new projects planned). "Start when" with "Class" of "Date" describes when this contributor was created. "End when" with "Class" of "Date" describes when this contributor was cancelled. "Duration" with "Class" of "Number" describes how old the contributor is. "Duration unit" with "Class" of "Text" describes the unit of the contributor's work length.</p>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-contributor-role-type.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-contributor-role-type.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of the type <span class='text-bold'>"Contributor role"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-contributor-role-object.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-contributor-role-object.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of a particular <span class='text-bold'>"Contributor role"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Contributor role</span> is a type with "Format" of "Page". For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they have the following important properties. "Activity unit" with "Class" of "Object" (Activity, Activity unit) describes which Activity or Activity unit this contributor role belongs to. "Contributor" with "Class" of "Object" (Contributor) describes which Contributor this contributor role belongs to. "Start when" with "Class" of "Date" describes when this contributor role was created. "End when" with "Class" of "Date" describes when this contributor role was cancelled. "Duration" with "Class" of "Number" describes how old the contributor role is. "Duration unit" with "Class" of "Text" describes the unit of the contributor role's work length.</p>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-contribution-type.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-contribution-type.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of the type <span class='text-bold'>"Contribution"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-contribution-object.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-contribution-object.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of a particular <span class='text-bold'>"Contribution"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Contribution</span> is a type with "Format" of "Page". For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they have the following important properties. "Activity unit" with "Class" of "Object" (Activity, Activity unit) describes which Activity or Activity unit this contribution belongs to. "Interest source" with "Class" of "Object" (Interest source) describes interest source this contribution belongs to. "Contributor role" with "Class" of "Object" (Contributor role) describes which contributor role this contribution belongs to. </p>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-interest-achievement-type.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-interest-achievement-type.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of the type <span class='text-bold'>"Interest achievement"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-interest-achievement-object.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-interest-achievement-object.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of a particular <span class='text-bold'>"Interest achievement"</span> object.
                 </figcaption>
@@ -1711,7 +1711,7 @@
             <p class="block-paragraph"><span class="text-bold">Interest achievement</span> is a type with "Format" of "Page". For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they have the following important properties. "Activity unit" with "Class" of "Object" (Activity, Activity unit) describes which Activity or Activity unit this interest achievement belongs to. "Interest affiliate" with "Class" of "Object" (Interest affiliate) describes which interest affiliate this interest achievement belongs to. "Awarding body" decribes what entity awards this interest achievement. "Start when" with "Class" of "Date" describes when this interest achievement is awarded. "End when" with "Class" of "Date" describes when thiinterest achievement is revokes.</p>
             <p class="block-paragraph">Interest's Activity has a small difference compared to Routine's Activity that its Activity unit contains Content and its related type. Here's the example of the <span class="text-bold">interest activity "Music"</span>.</p>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-interest-music-activity.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-interest-music-activity.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of the Interest's "Activity" object <span class='text-bold'>"Music"</span>.
                 </figcaption>
@@ -1747,7 +1747,7 @@
                 </li>
             </ul>
             <figure>
-                <img src="/asset/anytype_interest-based-object-use-case-interest-music-catalogs.png" alt="Anytype's Interest-based objects use case">
+                <img src="/essence-guide/asset/anytype_interest-based-object-use-case-interest-music-catalogs.png" alt="Anytype's Interest-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Interest-based objects</span> use case. The interface of the Interest's Catalogs for the Interest's "Activity" object <span class='text-bold'>"Music"</span>.
                 </figcaption>
@@ -1781,19 +1781,19 @@
             <p class="block-paragraph">This use cases is useful for technology objects "Web", "App", "Service",… I use it to collect every tech item, mostly digital items, in real life.</p>
             <p class="block-paragraph">Here's my approach. Since there are millions pieces of tech in the market, not to mention that they are rising exponentially, it is virtually impossible to create every type for every piece of tech that we come across, the logical choice would be to create one single type called "Tech" to represent every tech item to collect. This allows us to avoid Recreating the tech in another type if the nature of the tech changes and facing dilemma each time we encounter poly-nature tech, asking which is the most suitable type to represent it (Anytype does not allow creating objects that belong to more than one type).</p>
             <figure>
-                <img src="/asset/anytype_tech-based-object-use-case-tech-type.png" alt="Anytype's Tech-based objects use case">
+                <img src="/essence-guide/asset/anytype_tech-based-object-use-case-tech-type.png" alt="Anytype's Tech-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Tech-based objects</span> use case. The interface of the type <span class='text-bold'>"Tech"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_tech-based-object-use-case-graph-view.png" alt="Anytype's Tech-based objects use case">
+                <img src="/essence-guide/asset/anytype_tech-based-object-use-case-graph-view.png" alt="Anytype's Tech-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Tech-based objects</span> use case. The "Graph" view of the type <span class='text-bold'>"Tech"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_tech-based-object-use-case-tech-object.png" alt="Anytype's Tech-based objects use case">
+                <img src="/essence-guide/asset/anytype_tech-based-object-use-case-tech-object.png" alt="Anytype's Tech-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Tech-based objects</span> use case. The interface of a particular <span class='text-bold'>"Tech"</span> object.
                 </figcaption>
@@ -1944,13 +1944,13 @@
                 <li>
                     <p class="block-paragraph"><span class="text-bold">Tech variant</span> with "Class" of "Text": this is quite troublesome. Although all variants that change even just one property are encouraged to be reflected in their names, some variants don't have such a great impact. For example, programs that are written in different architectures, built with different flags, used in different modes,…; or serivces that are offered in different channels, rated with different metrics,… They are all still the programs. So this is just a small space for you to include some differences. I ignore this most of the time, to be honest.</p>
                     <figure>
-                        <img src="/asset/anytype_tech-based-object-use-case-tech-nature-type.png" alt="Anytype's Tech-based objects use case">
+                        <img src="/essence-guide/asset/anytype_tech-based-object-use-case-tech-nature-type.png" alt="Anytype's Tech-based objects use case">
                         <figcaption>
                             <span class='text-bold'>Tech-based objects</span> use case. The interface of the type <span class='text-bold'>"Tech nature"</span>.
                         </figcaption>
                     </figure>
                     <figure>
-                        <img src="/asset/anytype_tech-based-object-use-case-tech-nature-object.png" alt="Anytype's Tech-based objects use case">
+                        <img src="/essence-guide/asset/anytype_tech-based-object-use-case-tech-nature-object.png" alt="Anytype's Tech-based objects use case">
                         <figcaption>
                             <span class='text-bold'>Tech-based objects</span> use case. The interface of a particular <span class='text-bold'>"Tech nature"</span> object.
                         </figcaption>
@@ -1960,13 +1960,13 @@
                     <p class="block-paragraph"><span class="text-bold">Tech nature</span> with "Class" of "Object" (Tech nature): it attempts to categorize tech based on what it is (not what it does nor what function it serves). It has its own type "Tech nature" in the collection "Tech library". "Tech nature" object can contain other "Tech nature" objects. In its type, it has a special property called "Entry point" with "Class" of "Number" or "Checkbox" which can take a value number of 1 or empty. This meaningless property is just a shortcut to achieve the view of those "Tech nature" objects sitting at the top of the hierarchy (equivalent to "1"). Why such a thing? When things include other things in a non-filtered view, you get a very disorganized view of things. This property helps show only "objects" you wish to see first and access them.</p>
                     <p class="block-paragraph"><span class="text-underline">Example</span>: hardware, software. Hardware can be device, component,… Software can be artifact (program or app), service, library, extension, standard, pattern, license,…</p>
                     <figure>
-                        <img src="/asset/anytype_tech-based-object-use-case-tech-role-type.png" alt="Anytype's Tech-based objects use case">
+                        <img src="/essence-guide/asset/anytype_tech-based-object-use-case-tech-role-type.png" alt="Anytype's Tech-based objects use case">
                         <figcaption>
                             <span class='text-bold'>Tech-based objects</span> use case. The interface of the type <span class='text-bold'>"Tech role"</span>.
                         </figcaption>
                     </figure>
                     <figure>
-                        <img src="/asset/anytype_tech-based-object-use-case-tech-role-object.png" alt="Anytype's Tech-based objects use case">
+                        <img src="/essence-guide/asset/anytype_tech-based-object-use-case-tech-role-object.png" alt="Anytype's Tech-based objects use case">
                         <figcaption>
                             <span class='text-bold'>Tech-based objects</span> use case. The interface of a particular <span class='text-bold'>"Tech role"</span> object.
                         </figcaption>
@@ -2075,7 +2075,7 @@
             <h2 class="block-heading2">Finance-based objects</h2>
             <p class="block-paragraph">This use cases is useful for finance-related like "Personal finance", "Money", "Budget",… Honestly, I don't use it for my personal finance management as the current functionality of Anytype lacks a lot of basic features like calculation, formula, automatic triggers and conditions, reports,… This is just to see how well I could create something similar to personal finance management using Anytype.</p>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-wealth-collection.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-wealth-collection.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of the "Collection" object <span class='text-bold'>"Wealth"</span>.
                 </figcaption>
@@ -2085,143 +2085,143 @@
             <p class="block-paragraph"><span class="text-underline">Example</span>:</p>
             <p class="block-paragraph">Wealth gives rise to Accounts (such as savings accounts, credit card accounts, or loan accounts), tied to Currencies like USD, EUR, or JPY, and managed by Institutions such as banks or digital payment services. Value units provide equivalent balances in other currencies, supported by Currency exchanges using data from Information sources like central banks or financial platforms. Assets such as houses, cars, or jewelry record ownership and value, while Transactions like salary deposits, utility payments, or shopping expenses document account activities. These transactions involve Payees such as employers, landlords, or retailers, tracked with Trackers like electricity bills, shopping expenses, or rent payments. Generators automate repeated events like monthly rent, salary credits, or loan interests. Finally, Budgets such as vacation budgets, food budgets, or education budgets guide intentional use of money across accounts.</p>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-account-type.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-account-type.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of the type <span class='text-bold'>"Account"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-account-object.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-account-object.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of a particular <span class='text-bold'>"Account"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Account</span> is a type with "Format" of "List" because Account objects care about its linked object's properties. For templates, they all share a template of "Grid view" so that it can show all linked objects for all of the current object. For properties, they all have the following important properties. "Currency" with "Class" of "Object" (Currency) or "Multi-select" describes the currency of this account. "Institution" with "Class" of "Object" (Institution) describes the financial institution that provides this account. "Balance" with "Class" of "Number" describes how much money this account owns or owes. "Balance minimum" with "Class" of "Number" describes how much money this account must have (can be negative). "Balance maximum" with "Class" of "Number" describes how much money this account can have. "Date settlement" with "Class" of "Date" describes the date this account is not available or completes its terms. "Duration" with "Class" of "number" describes how often transactions are settled. "Duration unit" with "Class" of "Select" describes how often transactions are settled: day, week, month, quarter, year,… "Interest rate" with "Class" of "Number" describes the interest rate of this account for savings, loans, or investments. "Owners" with "Class" of "Object" (People, Organization) describes which people this account belongs to. "Authorized users" with "Class" of "Object" (People, Organization) describes which people are authorized to use this account. "Beneficiary" with "Class" of "Object" (People, Organization) describes people entitled to account in case of death. "Trustee" with "Class" of "Object" (People, Organization) describes people entrusted for this account. "Advisor" with "Class" of "Object" (People, Organization) describes people who gave advice on this account like wealth manager, broker, or institution representative. "Account type" with "Class" of "Multi-select" describes what account type this account is: Card (stores debit, credit, or prepaid card details; enables point-of-sale and online transactions), Checking account (hold liquid money for day-to-day spending; supports deposits, withdrawals, and balance tracking), Expense account (separate ledger for business-related spending; simplifies tax reporting and reimbursable expense tracking), Fundraising account (log donations or pledges to campaigns; shows totals, dates, and associated projects), Investment account (tracks stocks, ETFs, mutual funds, and dividends; supports buying, selling, and portfolio performance), Loan account (records mortgage, student loans, auto loans, etc.; monitors principal, interest, and repayment schedule), Payroll account (receive employer wages; may include pay-stub details, tax deductions, and net-pay calculations), Savings account (earns interest on deposited funds; typically limited withdrawals and used for emergency reserves), Wallet (aggregate funds from multiple sources; can be used for payments, transfers, and quick purchases). "Account number" with "Class" of "Text" describes the identification number of this account. "Account tier" with "Class" of "Text" describes the tier of this account, usually provided by the institution. "Account status" with "Class" of "Seclect" describes the current status of this account: Active (account is live and usable), Blocked (temporarily blocked due to PIN attempted failed, fraud alert, compliance hold,…), Closed (account permanently closed by user or provider), Dormant (inactive for a regulatory-defined period; may need reactivation), Expired (authorization or hold time elapsed without settlement), Matured (term is ending or completed), Pending (transaction created but not fully provisioned; may need further action), Restricted (usage limited, cannot withdraw, transfer capped), Seized (funds or activity locked due to court order, AML hold,…). "Account flag" with "Class" of "Multi-seclect" describes the current flag of this account: Audited (reviewed for accuracy, compliance, and regulatory requirements), Blacklisted (marked as banned or blocked due to fraud, risk, or sanctions), Delinquent (overdue with missed payments or obligations beyond allowed grace period), Disputed (challenged by user, pending investigation and resolution), Escalated (issue referred to higher authority or team for urgent resolution), Negative (balance below zero, liabilities exceeding assets or funds), Notified (informed of important status or account change), Sanctioned (restricted by legal, regulatory, or international sanctions and prohibitions), Verified (identity, details, or transaction successfully confirmed as authentic and accurate), Other. "Account confidentiality" with "Class" of "Select" describes how visible this account is: Private, Public, Shared, Other. "Start when" with "Class" of "Date" tells when this account was established. "End when" with "Class" of "Date" tells when this account was deleted.</p>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-institution-type.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-institution-type.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of the type <span class='text-bold'>"Institution"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-institution-object.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-institution-object.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of a particular <span class='text-bold'>"Institution"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Institution</span> is a type with "Format" of "Page. For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they have the following important properties. "Identifier code" with "Class" of "Text" describes the unique standard code for this institution. "Founded when" with "Class" of "Date" describes when this institution was founded. "Country" with "Class" of "Object" (Country) describes the list of countries that this institution operates in. "Institution kind" with "Class" of "Multi-select" describes what kind of financial institution this institution is: Bank (let users add checking, savings, or joint accounts for deposits), Card issuer (allow users to add credit-card numbers; tracks balances, limits, due dates, and rewards for revolving credit), Cryptocurrency exchange (connect exchanges or hardware wallets; manages Bitcoin, Ethereum, and other digital-asset balances), Digital payment services (link services such as PayPal, Apple Pay, or Google Pay; creates virtual wallet accounts), Insurance carrier (register health, life, auto, or property policies; records premiums, coverage limits, and claim status), Investment broker (add brokerage profiles; supports stock, ETF, mutual-fund, and dividend-reinvestment accounts), Loan service (add mortgage, student-loan, or auto-loan accounts; monitors principal, interest, and repayment schedules), Money transfer platform (enable sellers to send and receive cross-border transfers), Personal institution (store physical cash or pocket money), Social security provider (add government-issued social-security or national-ID accounts; tracks benefits, contributions, and eligibility). "Location" with "Class" of "Object" (Location, Platform) describes the place or platform this institution operates on. "Company" with "Class" of "Object" (Company) describes the company linked to this institution.</p>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-asset-type.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-asset-type.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of the type <span class='text-bold'>"Asset"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-asset-object.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-asset-object.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of a particular <span class='text-bold'>"Asset"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Asset</span> is a type with "Format" of "Page. For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they have the following important properties. "Inventory" with "Class" of "Object" (Inventory) describes the inventory that belongs to this asset. "Value" with "Class" of "Number" describes the monetary value of this asset. "Currency" with "Class" of "Select" or "Object" describes the currency of this asset. "Asset durability" with "Class" of "Select" describes whether this asset is expendable or sustainable. "Asset tangibility" with "Class" of "Select" describes whether this asset is tangible or intangible. "Asset origin" with "Class" of "Object" (Transaction) describes the transaction(s) that generate this asset (if blank, the asset is acquired without any transaction). "Asset category" with "Class" of "Multi-select" describes which category this asset belongs to, which can be: Collectible, Commodity, Consumable, Digital, Household goods, Intellectual property, Personal possession, Real estate, Vehicle,… </p>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-transaction-type.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-transaction-type.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of the type <span class='text-bold'>"Transaction"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-transaction-object.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-transaction-object.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of a particular <span class='text-bold'>"Transaction"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Transaction</span> is a type with "Format" of "Page. For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they have the following important properties. "Account" with "Class" of "Object" (Account) describes which account this transaction occurs on. "Value" with "Class" of "Number" describes the monetary value of this transaction. "Currency" with "Class" of "Select" or "Object" describes the currency of this transaction. "Payee" with "Class" of "Object" (Payee) describes which payee that initializes  or receives this transaction. "Transaction mode" with "Class" of "Select" describes whether this transaction is manually input or automatically generated. "Tracker" with "Class" of "Object" (Tracker) describes which tracker(s) this transaction belongs to.</p>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-payee-type.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-payee-type.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of the type <span class='text-bold'>"Payee"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-payee-object.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-payee-object.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of a particular <span class='text-bold'>"Payee"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Payee</span> is a type with "Format" of "Page. For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they have the following important properties. "Identifier code" with "Class" of "Text" describes the unique code for this payee. "Entity" with "Class" of "Object" (People, Organization, Institution) dsecribes the person or the company or the financial institution this payee is.</p>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-tracker-type.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-tracker-type.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of the type <span class='text-bold'>"Tracker"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-tracker-object.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-tracker-object.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of a particular <span class='text-bold'>"Tracker"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Tracker</span> is a type with "Format" of "List" because Tracker objects care about its linked object's properties. For templates, they all share a template of "Grid view" so that it can show all linked objects for all of the current object. For properties, they all have the following important properties. "Entry point" is how the Filter know if the trackers are top-level (checked) or not (unchecked). Only top-level trackers are displayed in the view when you enter the type "Category". If there is no "Entry point", every tracker will be displayed and you will feel disoriented to navigate. "Start when" with "Class" of "Date" describes when this tracker started tracking. "End when" with "Class" of "Date" describes when this tracker stopped tracking.</p>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-budget-type.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-budget-type.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of the type <span class='text-bold'>"Budget"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-budget-object.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-budget-object.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of a particular <span class='text-bold'>"Budget"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Budget</span> is a type with "Format" of "List" because Buget objects care about its linked object's properties. For templates, they all share a template of "Grid view" so that it can show all linked objects for all of the current object. For properties, they all have the following important properties. "Entry point" is how the Filter know if the budgets are top-level (checked) or not (unchecked). Only top-level budgets are displayed in the view when you enter the type "Category". If there is no "Entry point", every budget will be displayed and you will feel disoriented to navigate. "Start when" with "Class" of "Date" describes when this tracker started tracking. "End when" with "Class" of "Date" describes when this tracker stopped tracking. "Account" with "Class" of "Object" (Account) describes which account provides this budget. "Balance" with "Class" of "Number" describes the monetary value of this budget. "Currency" with "Class" of "Select" or "Object" describes the currency of this budget.</p>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-generator-type.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-generator-type.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of the type <span class='text-bold'>"Generator"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-generator-object.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-generator-object.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of a particular <span class='text-bold'>"Generator"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Generator</span> is a type with "Format" of "List" because Generator objects care about its linked object's properties. For templates, they all share a template of "Grid view" so that it can show all linked objects for all of the current object. For properties, they all have the following important properties. "Entry point" is how the Filter know if the generators are top-level (checked) or not (unchecked). Only top-level generators are displayed in the view when you enter the type "Category". If there is no "Entry point", every generator will be displayed and you will feel disoriented to navigate. "Account" with "Class" of "Object" (Account) describes which account this generator is for. "Balance" with "Class" of "Number" describes how much the account has fluctuated because of this generator. "Currency" with "Class" of "Select" or "Object" describes the unit of this generator's balance. "Payee" with "Class" of "Object" (Payee) describes the payee that initializes or receives for this generator. "Tracker" with "Class" of "Object" (Tracker) describes which tracker this generator belongs to. "Generator status" with "Class" of "Select" describes whether this generator is activated or not. "Generator mode" with "Class" of "Multi-select" describes which mode this generator operates with: Event-driven (create when particular events or financial triggers occur), Fixed date (trigger on specific recurring calendar days or weekdays), Fixed duration (generate transactions after consistent intervals of elapsed time). "Generator formula" with "Class" of "Text" describes the formula to calculate the balance of this generator. "Duration" with "Class" of "Number" describes the fixed duration of this generator. "Duration unit" with "Class" of "Text" or "Select" describes the unit of the fixed duration of this generator. "Generator date position" with "Class" of "Number" describes the n-th day within the timeframe for this generator to activate. "Generator date timeframe" with "Class" of "Select" describes the timeframe for the generator date position of this generator: week, month, quarter, year. "Generator event" with "Class" of "Text" describes the event for this generator to activate.</p>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-value-unit-type.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-value-unit-type.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of the type <span class='text-bold'>"Value unit"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-value-unit-object.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-value-unit-object.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of a particular <span class='text-bold'>"Value unit"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Value unit</span> is a type with "Format" of "Page. For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they have the following important properties. "Financial entity" with "Class" of "Object" (Account, Asset, Transaction, Tracker, Budget) describes which finance entity this value unit belongs to. "Balance" with "Class" of "Number" describes the monetary value of this value unit. "Currency" with "Class" of "Select" or "Object" describes the currency of this value unit. "Currency exchange" with "Class" of "Object" (Currency exchange) describes which currency exchange this value unit belongs to. "Currency exchange rate" with "Class" of "Number" describes the exchange rate of this value unit.</p>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-currency-exchange-type.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-currency-exchange-type.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of the type <span class='text-bold'>"Currency exchange"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-currency-exchange-object.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-currency-exchange-object.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of a particular <span class='text-bold'>"Currency exchange"</span> object.
                 </figcaption>
             </figure>
             <p class="block-paragraph"><span class="text-bold">Currency exchange</span> is a type with "Format" of "Page. For templates, they share a simple template which lists all of its properties out in the document interface. For properties, they have the following important properties. "Currency source" with "Class" of "Object" (Currency) describes the currency whose this currency exchange's perspective is from. "Currency target" with "Class" of "Object" (Currency) describes the currency whose this currency exchange's perspective is to. "Currency exchange rate" with "Class" of "Number" describes the exchange rate of this currency exchange. "Currency info source" with "Class" of "Object" (Currency info source) describes which currency info source provides the information for this exchange rate.</p>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-currency-info-source-type.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-currency-info-source-type.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of the type <span class='text-bold'>"Currency info source"</span>.
                 </figcaption>
             </figure>
             <figure>
-                <img src="/asset/anytype_finance-based-object-use-case-currency-info-source-object.png" alt="Anytype's Finance-based objects use case">
+                <img src="/essence-guide/asset/anytype_finance-based-object-use-case-currency-info-source-object.png" alt="Anytype's Finance-based objects use case">
                 <figcaption>
                     <span class='text-bold'>Finance-based objects</span> use case. The interface of a particular <span class='text-bold'>"Currency info source"</span> object.
                 </figcaption>
@@ -2240,6 +2240,6 @@
     </main>
 
     <!-- Do not delete -->
-    <script src="/js/include_body.js" defer></script>
+    <script src="/essence-guide/js/include_body.js" defer></script>
 </body>
 </html>

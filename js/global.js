@@ -216,7 +216,7 @@ function imageDownload() {
     const link = document.createElement(`a`);
     link.href = currentImgObj.src;
     
-    const filename = currentImgObj.src.substring(currentImgObj.src.lastIndexOf(`/`) + 1) || `downloaded-image.jpg`;
+    const filename = currentImgObj.src.substring(currentImgObj.src.lastIndexOf(`/essence-guide/`) + 1) || `downloaded-image.jpg`;
     link.download = filename;
 
     document.body.appendChild(link);
@@ -230,7 +230,7 @@ function searchBlogContent() {
     if (inputElement) {
         const rawValue = inputElement.value.trimStart();
         const encodedValue = encodeURIComponent(rawValue);
-        const targetUrl = `/blog.html?content=${encodedValue}`;
+        const targetUrl = `/essence-guide/blog.html?content=${encodedValue}`;
         window.open(targetUrl, '_blank');
     }
 }

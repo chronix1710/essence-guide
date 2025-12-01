@@ -21,3 +21,4 @@ This blogging site uses the following:
 - [GitHub Pages](https://docs.github.com/en/pages): hosting static page.
 - [Giscus](https://github.com/giscus/giscus): GitHub's comment section.
 - [MiniSearch](https://github.com/lucaong/minisearch): full-text fuzzy JavaScript search engine.
+- [Google AdSense](https://adsense.google.com/): advertisements displayed on the site.
