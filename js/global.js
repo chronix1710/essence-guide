@@ -2,6 +2,10 @@ function sidebarToggle(side) {
     document.getElementById(`sidebar-` + side.toString()).classList.toggle(`sidebar-close`);
     document.getElementById(`button_sidebar-` + side.toString() + `_open`).classList.toggle(`button-close`);
     document.getElementById(`button_sidebar-` + side.toString() + `_close`).classList.toggle(`button-close`);
+    if (side === `right`) {
+        console.log(`here`);
+        window.scrollTo(document.body.scrollWidth, 0);
+    }
 }
 
 function modeToggle(mode) {
@@ -230,5 +234,11 @@ function searchBlogContent() {
         const encodedValue = encodeURIComponent(rawValue);
         const targetUrl = `/essence-guide/blog.html?content=${encodedValue}`;
         window.open(targetUrl, '_blank');
+    }
+}
+
+function enterSearch() {
+    if (e.key === `Enter`) {
+        searchBlogContent();
     }
 }
