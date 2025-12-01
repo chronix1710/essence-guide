@@ -287,6 +287,12 @@ body {
     }
 }
 
+/* Ads */
+#ad-before, #ad-after {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /* Sidebar */
 .sidebar {
     height: 100vh;

@@ -109,10 +109,8 @@ function imageOpen(index) {
 
 function renderCaption() {
     const caption = document.getElementById(`image-caption`);
-    if (!caption) {
-        caption.innerHTML = ``;
-        caption.appendChild(viewerState.captions[viewerState.currentIndex].cloneNode(true));
-    }
+    caption.innerHTML = ``;
+    caption.appendChild(viewerState.captions[viewerState.currentIndex].cloneNode(true));
 }
 
 function renderImage() {
