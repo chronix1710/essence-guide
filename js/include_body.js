@@ -223,6 +223,36 @@ function enableCommmentSection() {
     commentContainer.appendChild(script);
 }
 
+// Generate Ads
+function enableAds() {
+    // Load the Google AdSense library
+    const script = document.createElement('script');
+    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7484796661959697";
+    script.setAttribute('async', true);
+    script.setAttribute('crossorigin', 'anonymous');
+    document.head.appendChild(script);
+
+    script.onload = function() {
+        // Check Google AdSense library
+        if (typeof window.adsbygoogle === undefined) {
+            console.warn(`AdSense library not loaded yet.`);
+            return;
+        }
+
+        // Find all ad slots that haven't been filled yet
+        const adSlots = document.querySelectorAll('.adsbygoogle:not([data-adsbygoogle-status="done"])');
+
+        // Trigger the push
+        adSlots.forEach(() => {
+            try {
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            } catch (e) {
+                console.error("AdSense failed to push", e);
+            }
+        });
+    }
+}
+
 // Include body.html based on conditions
 (async () => {
     const body = document.body;
@@ -254,10 +284,17 @@ function enableCommmentSection() {
         if (main.dataset["menubar"] === "false") {
             document.getElementById(`menubar`).remove();
         }
+        if (main.dataset["advertisement"] === "false") {
+            document.getElementById(`ad-before`).remove();
+            document.getElementById(`ad-after`).remove();
+        }
+        if (main.dataset["donateSection"] === "false") {
+            document.getElementById(`donate-section`).remove();
+        }
         if (main.dataset["commentSection"] === "false") {
             document.getElementById(`comment-section`).remove();
         }
-        // Enable GitHub comment section
+        // Enable GitHub comment section & Donate button
         else {
             enableCommmentSection();
             const discussionBaseLink = `https://github.com/chronix1710/essence-guide/discussions/`;
@@ -266,7 +303,8 @@ function enableCommmentSection() {
             discussionLink.href = discussionBaseLink + discussionNumber;
             discussionLink.innerText = discussionBaseLink + discussionNumber;
         }
-        
+
+        enableAds();
     } 
     catch (err) {
         console.error(`Failed to load body.html:`, err);
