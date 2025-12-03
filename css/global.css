@@ -308,6 +308,10 @@ body {
     }
 }
 
+ins.adsbygoogle[data-ad-status="unfilled"] {
+    display: none !important;
+}
+
 /* Sidebar */
 .sidebar {
     height: 100vh;
